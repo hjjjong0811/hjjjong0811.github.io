@@ -79,7 +79,7 @@ header {
 }
 header .logo {
   margin: 0 auto;
-  margin-bottom: 150px;
+  margin-bottom: 5em;
   text-align: center;
 }
 header .logo a,
@@ -87,6 +87,11 @@ header .logo a:link,
 header .logo a:visited,
 header .logo a:active {
   border-bottom: none;
+}
+@media (max-width: 47.9em) {
+  header .logo {
+    margin-bottom: 3em;
+  }
 }
 header .logo .logo-icon {
   font-size: 60px;
@@ -375,8 +380,10 @@ section.main {
 }
 section.main .posts-container {
   width: 100%;
+  padding: 10px;
 }
 section.main .posts-container .post-index-container {
+  overflow: hidden;
   display: -ms-inline-flexbox;
   display: inline-flex;
   -ms-flex-flow: row nowrap;
@@ -386,42 +393,35 @@ section.main .posts-container .post-index-container {
   -ms-flex-align: start;
       align-items: flex-start;
   position: relative;
-  margin: 20px;
-  min-width: 150px;
   min-height: 150px;
-  width: 20%;
+  width: calc(25% - 25px);
   height: auto;
+  margin: 10px;
+  border-left: 1px solid #d7ecff;
+  border-right: 1px solid #d7ecff;
+}
+@media (max-width: 47.9em) {
+  section.main .posts-container .post-index-container {
+    width: calc(100% - 20px);
+  }
 }
 section.main .posts-container .post-index-container:hover .post-infos {
   background-color: rgba(0,0,0,0.502);
   transition: background-color 0.5s ease;
 }
 section.main .posts-container .post-index-container:hover:before {
-  left: -10px;
+  right: 0px;
 }
 section.main .posts-container .post-index-container:hover:after {
-  right: -10px;
+  left: 0px;
 }
 section.main .posts-container .post-index-container:before {
   position: absolute;
   content: "  ";
-  padding: 5px;
-  top: -10px;
-  bottom: -10px;
-  left: -5px;
-  border-left: 1px solid #d7ecff;
-  border-bottom: 1px solid #d7ecff;
-  border-top: 1px solid #d7ecff;
-  transition: left 0.3s ease;
-}
-section.main .posts-container .post-index-container:after {
-  position: absolute;
-  content: "  ";
-  padding: 5px;
-  top: -10px;
-  bottom: -10px;
-  right: -5px;
-  border-right: 1px solid #d7ecff;
+  top: 0px;
+  bottom: 0px;
+  left: 0px;
+  right: 100%;
   border-bottom: 1px solid #d7ecff;
   border-top: 1px solid #d7ecff;
   transition: right 0.3s ease;
@@ -446,8 +446,11 @@ section.main .posts-container .post-index-container .post-infos {
   background-color: rgba(0,0,0,0);
 }
 section.main .posts-container .post-index-container .post-infos h1.title {
+  width: 100%;
+  word-wrap: break-word;
   text-align: center;
   font-family: "Orbitron", sans-serif;
+  font-size: 1.8em;
   text-shadow: 0 0 1px #fff, 0 0 5px #fff, 0 0 15px #228dff;
   cursor: pointer;
 }
@@ -464,9 +467,11 @@ section.main .posts-container .post-index-container .post-infos h1.title a:activ
 }
 section.main .posts-container .post-index-container .post-infos .post-info {
   margin-top: 10px;
+  word-wrap: break-word;
   text-align: center;
   text-transform: uppercase;
   font-family: "Orbitron", sans-serif;
+  font-size: 0.8em;
 }
 section.main .posts-container .post-index-container .post-infos .post-info span {
   padding: 10px;
@@ -483,6 +488,8 @@ section.main .posts-container .post-index-container .post-infos .post-tags {
   padding: 10px;
   text-transform: uppercase;
   font-family: "Orbitron", sans-serif;
+  font-size: 0.8em;
+  word-wrap: break-word;
 }
 section.main .posts-container .post-index-container .post-infos .post-tags a,
 section.main .posts-container .post-index-container .post-infos .post-tags i {
@@ -567,7 +574,7 @@ section.main .featherlight .featherlight-content .featherlight-close:hover {
 .menu-bg .menu-container ul li a {
   font-family: "Orbitron", sans-serif;
   text-transform: uppercase;
-  font-size: 30px;
+  font-size: 1.5em;
   border-bottom: none;
 }
 nav {
