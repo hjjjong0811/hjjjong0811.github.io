@@ -1,0 +1,22 @@
+.about > div {
+  display: inline-block;
+  width: 50%;
+  padding: 0px 30px 30px 30px;
+}
+@media $sm {
+  .about > div {
+    width: 100%;
+  }
+}
+.about .about_profile .profile_img {
+  display: inline-block;
+  width: 100%;
+  hegith: 100%;
+  border-radius: 100%;
+  -moz-border-radius: 100%;
+  -khtml-border-radius: 100%;
+  -webkit-border-radius: 100%;
+}
+.about .about_content {
+  margin-top: 50px;
+}
