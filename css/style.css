@@ -466,11 +466,6 @@ section.main .posts-container .post-index-container .post-infos h1.title a:visit
 section.main .posts-container .post-index-container .post-infos h1.title a:active {
   border-bottom: none;
 }
-@media (max-width: 33.9em) {
-  section.main .posts-container .post-index-container .post-infos h1.title {
-    font-size: 1.2em;
-  }
-}
 section.main .posts-container .post-index-container .post-infos .post-info {
   margin-top: 10px;
   word-wrap: break-word;
@@ -481,11 +476,6 @@ section.main .posts-container .post-index-container .post-infos .post-info {
 }
 section.main .posts-container .post-index-container .post-infos .post-info span {
   padding: 10px;
-}
-@media (max-width: 33.9em) {
-  section.main .posts-container .post-index-container .post-infos .post-info {
-    font-size: 0.5em;
-  }
 }
 section.main .posts-container .post-index-container .post-infos.hover:before {
   left: 5px;
@@ -501,11 +491,6 @@ section.main .posts-container .post-index-container .post-infos .post-tags {
   font-family: "Orbitron", sans-serif;
   font-size: 0.8em;
   word-wrap: break-word;
-}
-@media (max-width: 33.9em) {
-  section.main .posts-container .post-index-container .post-infos .post-tags {
-    font-size: 0.5em;
-  }
 }
 section.main .posts-container .post-index-container .post-infos .post-tags a,
 section.main .posts-container .post-index-container .post-infos .post-tags i {

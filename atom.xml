@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://hjjjong0811.github.io/"/>
-  <updated>2018-09-06T17:05:24.882Z</updated>
+  <updated>2018-09-05T12:29:13.557Z</updated>
   <id>https://hjjjong0811.github.io/</id>
   
   <author>
@@ -15,32 +15,6 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
-  
-  <entry>
-    <title>Dummy2</title>
-    <link href="https://hjjjong0811.github.io/2018/09/06/Dummy2/"/>
-    <id>https://hjjjong0811.github.io/2018/09/06/Dummy2/</id>
-    <published>2018-09-06T12:23:37.000Z</published>
-    <updated>2018-09-06T17:05:24.882Z</updated>
-    
-    <content type="html"><![CDATA[<p>Test</p><figure class="highlight cpp"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">#<span class="meta-keyword">include</span> <span class="meta-string">&lt;stdio.h&gt;</span></span></span><br><span class="line"></span><br><span class="line"><span class="keyword">namespace</span> Test&#123;</span><br><span class="line">    <span class="keyword">enum</span> TestEnum&#123;</span><br><span class="line">        COOL, BANANABOAT</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="class"><span class="keyword">class</span> <span class="title">TestClass</span> :</span> <span class="keyword">public</span> Mom&#123;</span><br><span class="line">    <span class="keyword">public</span>:</span><br><span class="line">        <span class="function"><span class="keyword">static</span> TestClass <span class="title">getInstance</span><span class="params">()</span></span>&#123;</span><br><span class="line">            <span class="keyword">return</span> instance;</span><br><span class="line">        &#125;</span><br><span class="line">        <span class="function"><span class="keyword">virtual</span> <span class="keyword">void</span> <span class="title">test</span><span class="params">(<span class="keyword">int</span> param)</span> </span>= <span class="number">0</span>;</span><br><span class="line">    <span class="keyword">private</span>:</span><br><span class="line">        <span class="keyword">int</span> _mNum;  <span class="comment">//Dummy Member Var</span></span><br><span class="line">        <span class="keyword">static</span> <span class="keyword">const</span> <span class="keyword">int</span> DDDDD = <span class="number">343</span>;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">int</span> <span class="title">main</span><span class="params">()</span></span>&#123;</span><br><span class="line">    <span class="keyword">int</span> num = <span class="number">0</span>;</span><br><span class="line">    TestClass t;</span><br><span class="line"></span><br><span class="line">    <span class="keyword">for</span>(<span class="keyword">int</span> i=<span class="number">0</span>; i&lt; <span class="number">10</span>; ++i)&#123;</span><br><span class="line">        num += i;</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    <span class="keyword">return</span> <span class="number">0</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>]]></content>
-    
-    <summary type="html">
-    
-      
-      
-        &lt;p&gt;Test&lt;/p&gt;
-&lt;figure class=&quot;highlight cpp&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;2&lt;/span&gt;&lt;br&gt;&lt;
-      
-    
-    </summary>
-    
-      <category term="hobby" scheme="https://hjjjong0811.github.io/categories/hobby/"/>
-    
-    
-      <category term="DummyTag1" scheme="https://hjjjong0811.github.io/tags/DummyTag1/"/>
-    
-  </entry>
   
   <entry>
     <title>Dummy4</title>
@@ -62,6 +36,32 @@
     </summary>
     
       <category term="programming" scheme="https://hjjjong0811.github.io/categories/programming/"/>
+    
+    
+      <category term="DummyTag1" scheme="https://hjjjong0811.github.io/tags/DummyTag1/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Dummy2</title>
+    <link href="https://hjjjong0811.github.io/2018/09/06/Dummy2/"/>
+    <id>https://hjjjong0811.github.io/2018/09/06/Dummy2/</id>
+    <published>2018-09-06T12:23:37.000Z</published>
+    <updated>2018-09-06T17:05:24.882Z</updated>
+    
+    <content type="html"><![CDATA[<p>Test</p><figure class="highlight cpp"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">#<span class="meta-keyword">include</span> <span class="meta-string">&lt;stdio.h&gt;</span></span></span><br><span class="line"></span><br><span class="line"><span class="keyword">namespace</span> Test&#123;</span><br><span class="line">    <span class="keyword">enum</span> TestEnum&#123;</span><br><span class="line">        COOL, BANANABOAT</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="class"><span class="keyword">class</span> <span class="title">TestClass</span> :</span> <span class="keyword">public</span> Mom&#123;</span><br><span class="line">    <span class="keyword">public</span>:</span><br><span class="line">        <span class="function"><span class="keyword">static</span> TestClass <span class="title">getInstance</span><span class="params">()</span></span>&#123;</span><br><span class="line">            <span class="keyword">return</span> instance;</span><br><span class="line">        &#125;</span><br><span class="line">        <span class="function"><span class="keyword">virtual</span> <span class="keyword">void</span> <span class="title">test</span><span class="params">(<span class="keyword">int</span> param)</span> </span>= <span class="number">0</span>;</span><br><span class="line">    <span class="keyword">private</span>:</span><br><span class="line">        <span class="keyword">int</span> _mNum;  <span class="comment">//Dummy Member Var</span></span><br><span class="line">        <span class="keyword">static</span> <span class="keyword">const</span> <span class="keyword">int</span> DDDDD = <span class="number">343</span>;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">int</span> <span class="title">main</span><span class="params">()</span></span>&#123;</span><br><span class="line">    <span class="keyword">int</span> num = <span class="number">0</span>;</span><br><span class="line">    TestClass t;</span><br><span class="line"></span><br><span class="line">    <span class="keyword">for</span>(<span class="keyword">int</span> i=<span class="number">0</span>; i&lt; <span class="number">10</span>; ++i)&#123;</span><br><span class="line">        num += i;</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    <span class="keyword">return</span> <span class="number">0</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;p&gt;Test&lt;/p&gt;
+&lt;figure class=&quot;highlight cpp&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;2&lt;/span&gt;&lt;br&gt;&lt;
+      
+    
+    </summary>
+    
+      <category term="hobby" scheme="https://hjjjong0811.github.io/categories/hobby/"/>
     
     
       <category term="DummyTag1" scheme="https://hjjjong0811.github.io/tags/DummyTag1/"/>
