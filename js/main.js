@@ -71,9 +71,39 @@ var alphaDust = function () {
     };
 }();
 
+var actionBar = function (){
+    var _postNavOn = true;
+
+    function _menuShow () {
+        $('.postNavContainer a').addClass('postNav-active');
+        $('#header-post').css({right: '2em'});
+        _postNavOn = true;
+    }
+
+    function _menuHide() {
+        $('.postNavContainer a').removeClass('postNav-active');
+        $('#header-post').css({right: '-300px'});
+        _postNavOn = false;
+    }
+
+    function initPostNav() {
+        $('.postNavContainer a').click(function () {
+            if(_postNavOn) {
+                _menuHide();
+            } else {
+                _menuShow();
+            }
+        });
+    }
+    
+    return {
+        initPostNav: initPostNav
+    };
+}();
 
 $(document).ready(function () {
     alphaDust.initPostHeader();
     alphaDust.initMenu();
     alphaDust.displayArchives();
+    actionBar.initPostNav();
 });

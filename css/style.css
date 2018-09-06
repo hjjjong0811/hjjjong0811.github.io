@@ -393,7 +393,6 @@ section.main .posts-container .post-index-container {
   -ms-flex-align: start;
       align-items: flex-start;
   position: relative;
-  min-height: 150px;
   width: calc(25% - 25px);
   height: auto;
   margin: 10px;
@@ -402,7 +401,7 @@ section.main .posts-container .post-index-container {
 }
 @media (max-width: 47.9em) {
   section.main .posts-container .post-index-container {
-    width: calc(100% - 20px);
+    width: calc(50% - 30px);
   }
 }
 section.main .posts-container .post-index-container:hover .post-infos {
@@ -433,10 +432,10 @@ section.main .posts-container .post-index-container .post-index-back {
   min-height: 150px;
   height: 100%;
   background-size: cover;
-  -moz-filter: blur(5px);
-  -o-filter: blur(5px);
-  -ms-filter: blur(5px);
-  filter: blur(5px);
+  -moz-filter: blur(3px);
+  -o-filter: blur(3px);
+  -ms-filter: blur(3px);
+  filter: blur(3px);
 }
 section.main .posts-container .post-index-container .post-infos {
   position: relative;
@@ -444,6 +443,13 @@ section.main .posts-container .post-index-container .post-infos {
   width: 100%;
   padding: 10px;
   background-color: rgba(0,0,0,0);
+}
+@media (max-width: 33.9em) {
+  section.main .posts-container .post-index-container .post-infos {
+    margin-top: 0px;
+    height: 100%;
+    padding: 50px 5px 5px 5px;
+  }
 }
 section.main .posts-container .post-index-container .post-infos h1.title {
   width: 100%;
@@ -462,7 +468,7 @@ section.main .posts-container .post-index-container .post-infos h1.title a:activ
 }
 @media (max-width: 33.9em) {
   section.main .posts-container .post-index-container .post-infos h1.title {
-    font-size: 2.5em;
+    font-size: 1.2em;
   }
 }
 section.main .posts-container .post-index-container .post-infos .post-info {
@@ -475,6 +481,11 @@ section.main .posts-container .post-index-container .post-infos .post-info {
 }
 section.main .posts-container .post-index-container .post-infos .post-info span {
   padding: 10px;
+}
+@media (max-width: 33.9em) {
+  section.main .posts-container .post-index-container .post-infos .post-info {
+    font-size: 0.5em;
+  }
 }
 section.main .posts-container .post-index-container .post-infos.hover:before {
   left: 5px;
@@ -490,6 +501,11 @@ section.main .posts-container .post-index-container .post-infos .post-tags {
   font-family: "Orbitron", sans-serif;
   font-size: 0.8em;
   word-wrap: break-word;
+}
+@media (max-width: 33.9em) {
+  section.main .posts-container .post-index-container .post-infos .post-tags {
+    font-size: 0.5em;
+  }
 }
 section.main .posts-container .post-index-container .post-infos .post-tags a,
 section.main .posts-container .post-index-container .post-infos .post-tags i {
@@ -827,13 +843,48 @@ figure.highlight table tbody tr td pre .clojure .title {
 figure.highlight table tbody tr td pre .deletion {
   color: #dc322f;
 }
-#header-post {
-  position: fixed;
-  top: 5rem;
-  max-width: 300px;
-  right: 0;
+.postNavContainer {
   display: inline-block;
+  position: fixed;
   float: right;
+  right: 2em;
+  top: 5em;
+}
+.postNavContainer a,
+.postNavContainer a:link,
+.postNavContainer a:visited,
+.postNavContainer a:active {
+  font-family: FontAwesome;
+  font-style: normal;
+  border-bottom: none;
+  font-size: 1.2em;
+  opacity: 0.5;
+  transition: opacity 0.3s ease;
+}
+.postNavContainer a:before,
+.postNavContainer a:link:before,
+.postNavContainer a:visited:before,
+.postNavContainer a:active:before {
+  content: "\f053";
+}
+.postNavContainer a.postNav-active:before,
+.postNavContainer a:link.postNav-active:before,
+.postNavContainer a:visited.postNav-active:before,
+.postNavContainer a:active.postNav-active:before {
+  content: "\f054";
+}
+.postNavContainer a:hover {
+  opacity: 1;
+}
+#header-post {
+  display: inline-block;
+  position: fixed;
+  float: right;
+  right: 2em;
+  top: 7em;
+  max-width: 300px;
+  border-top: 1px solid rgba(255,255,255,0.533);
+  transition: right 0.3s ease;
 }
 #header-post * {
   border: none;
@@ -869,45 +920,43 @@ figure.highlight table tbody tr td pre .deletion {
 }
 #header-post #actions {
   float: right;
-  margin-top: 2rem;
-  margin-right: 2rem;
-  width: 100%;
   text-align: right;
 }
 #header-post #actions ul {
   display: block;
 }
 #header-post #actions i {
-  border: solid #fff;
-  width: 15px;
-  height: 15px;
-  border-width: 0 5px 5px 0;
-  display: inline-block;
-  padding: 5px;
+  font-family: FontAwesome;
+  font-style: normal;
+  border-bottom: none;
+  font-size: 1.2em;
+  opacity: 0.5;
+  color: #d7ecff;
+  transition: opacity 0.3s ease;
 }
-#header-post #actions .fa-chevron-up {
-  transform: rotate(-135deg);
-  -webkit-transform: rotate(-135deg);
+#header-post #actions i:hover {
+  opacity: 1;
 }
-#header-post #actions .fa-chevron-left {
-  transform: rotate(-225deg);
-  -webkit-transform: rotate(-225deg);
+#header-post #actions .nav_up:before {
+  content: "\f062";
 }
-#header-post #actions .fa-chevron-right {
-  transform: rotate(-45deg);
-  -webkit-transform: rotate(-45deg);
+#header-post #actions .nav_right:before {
+  content: "\f061";
+}
+#header-post #actions .nav_left:before {
+  content: "\f060";
 }
 #header-post #toc {
   float: right;
   clear: both;
   overflow-y: scroll;
   margin-top: 1rem;
-  padding-right: 2rem;
-  max-width: 100%;
+  max-width: 300px;
   max-height: calc(95vh - 15rem);
   text-align: right;
 }
 #header-post #toc a:hover {
+  text-shadow: none;
   color: #f05f70;
 }
 #header-post #toc .toc-level-1 > .toc-link {
@@ -941,8 +990,8 @@ figure.highlight table tbody tr td pre .deletion {
 #header-post #tags {
   float: right;
   margin-top: 1rem;
-  padding-right: 2rem;
   position: relative;
+  text-align: right;
 }
 #header-post #tags a {
   color: #f05f70;

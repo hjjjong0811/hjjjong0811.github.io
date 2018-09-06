@@ -300,22 +300,23 @@ s.setAttribute('data-timestamp', +new Date());
     <span id="actions">
         <ul>
             
+            <li>
+                <i  class="nav_left"
+                    style="cursor:pointer;"
+                    onclick="location.href='/2018/09/06/Dummy2/';">
+                </i>
+            </li>
+            
             
             <li>
-                <i  class="fas fa-chevron-right"
-                    aria-hidden="true"
-                    onmouseover="$('#i-next').toggle();"
-                    onmouseout="$('#i-next').toggle();"
+                <i  class="nav_right"
                     style="cursor:pointer;"
-                    onclick="location.href='/2018/09/06/블로그시작/';">
+                    onclick="location.href='/2018/09/06/Dummy3/';">
                 </i>
             </li>
             
             <li>
-                <i  class="fas fa-chevron-up"
-                    aria-hidden="true"
-                    onmouseover="$('#i-top').toggle();"
-                    onmouseout="$('#i-top').toggle();"
+                <i  class="nav_up"
                     style="cursor:pointer;"
                     onclick="$('html, body').animate({ scrollTop: 0 }, 'fast');">
                 </i>
@@ -331,9 +332,15 @@ s.setAttribute('data-timestamp', +new Date());
 
     
     <div id="tags">
-        <a href="/tags/DummyTag1/">#DummyTag1</a>
+        <a href="/tags/DummyTag1/">#DummyTag1</a><br/>
     </div>
     
+</div>
+
+
+<!--Show/Hide Icon-->
+<div class="postNavContainer">
+    <a class="postNav postNav-active" href="#postNav"></a>
 </div>
 
 
@@ -355,19 +362,19 @@ s.setAttribute('data-timestamp', +new Date());
         <ul>
             
             <li>
+                <a class="footer-post" href="/2018/09/06/Dummy2/">Dummy2</a>
+            </li>
+            
+            <li>
                 <a class="footer-post" href="/2018/09/06/Dummy4/">Dummy4</a>
             </li>
             
             <li>
-                <a class="footer-post" href="/2018/09/06/블로그시작/">깃허브 블로그 시작!</a>
+                <a class="footer-post" href="/2018/09/06/Dummy3/">Dummy3</a>
             </li>
             
             <li>
-                <a class="footer-post" href="/2018/09/05/Dummy5/">Dummy</a>
-            </li>
-            
-            <li>
-                <a class="footer-post" href="/2018/09/04/Dummy2/">Dummy2</a>
+                <a class="footer-post" href="/2018/09/06/Dummy5/">Dummy</a>
             </li>
             
         </ul>
@@ -389,11 +396,11 @@ s.setAttribute('data-timestamp', +new Date());
         </li>
         
         <li>
-            <a class="footer-post" href="/categories/download/">download</a>
+            <a class="footer-post" href="/categories/information/">information</a>
         </li>
         
         <li>
-            <a class="footer-post" href="/categories/information/">information</a>
+            <a class="footer-post" href="/categories/download/">download</a>
         </li>
         
     </ul>
