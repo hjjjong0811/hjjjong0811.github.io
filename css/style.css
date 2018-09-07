@@ -865,15 +865,19 @@ figure.highlight table tbody tr td pre .deletion {
   display: inline-block;
   position: fixed;
   float: right;
-  right: 2em;
   top: 7em;
   max-width: 300px;
   border-top: 1px solid rgba(255,255,255,0.533);
   transition: right 0.3s ease;
+  right: -300px;
 }
-@media (max-width: 47.9em) {
+@media screen and (max-width: 300px) {
   #header-post {
-    max-width: calc(300px - 2em);
+    max-width: calc(100% - 4em);
+  }
+}
+@media (max-width: 61.9em) {
+  #header-post {
     background-color: rgba(0,0,0,0.502);
   }
 }

@@ -87,6 +87,12 @@ var actionBar = function (){
     }
 
     function initPostNav() {
+        if(window.matchMedia("screen and (max-width: 61.9em)").matches)
+            _postNavOn = false;
+
+        if(_postNavOn) _menuShow();
+        else _menuHide();
+
         $('.postNavContainer a').click(function () {
             if(_postNavOn) {
                 _menuHide();
