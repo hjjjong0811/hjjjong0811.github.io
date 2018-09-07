@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://hjjjong0811.github.io/"/>
-  <updated>2018-09-06T17:05:24.882Z</updated>
+  <updated>2018-09-05T12:29:13.557Z</updated>
   <id>https://hjjjong0811.github.io/</id>
   
   <author>
@@ -15,6 +15,32 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>Dummy4</title>
+    <link href="https://hjjjong0811.github.io/2018/09/06/Dummy4/"/>
+    <id>https://hjjjong0811.github.io/2018/09/06/Dummy4/</id>
+    <published>2018-09-06T12:23:37.000Z</published>
+    <updated>2018-09-05T12:29:13.557Z</updated>
+    
+    <content type="html"><![CDATA[<p>Test</p>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;p&gt;Test&lt;/p&gt;
+
+      
+    
+    </summary>
+    
+      <category term="programming" scheme="https://hjjjong0811.github.io/categories/programming/"/>
+    
+    
+      <category term="DummyTag1" scheme="https://hjjjong0811.github.io/tags/DummyTag1/"/>
+    
+  </entry>
   
   <entry>
     <title>Dummy2</title>
@@ -36,32 +62,6 @@
     </summary>
     
       <category term="hobby" scheme="https://hjjjong0811.github.io/categories/hobby/"/>
-    
-    
-      <category term="DummyTag1" scheme="https://hjjjong0811.github.io/tags/DummyTag1/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>Dummy</title>
-    <link href="https://hjjjong0811.github.io/2018/09/06/Dummy5/"/>
-    <id>https://hjjjong0811.github.io/2018/09/06/Dummy5/</id>
-    <published>2018-09-06T12:23:37.000Z</published>
-    <updated>2018-09-06T17:05:50.164Z</updated>
-    
-    <content type="html"><![CDATA[<p>Test</p>]]></content>
-    
-    <summary type="html">
-    
-      
-      
-        &lt;p&gt;Test&lt;/p&gt;
-
-      
-    
-    </summary>
-    
-      <category term="download" scheme="https://hjjjong0811.github.io/categories/download/"/>
     
     
       <category term="DummyTag1" scheme="https://hjjjong0811.github.io/tags/DummyTag1/"/>
@@ -95,11 +95,11 @@
   </entry>
   
   <entry>
-    <title>Dummy4</title>
-    <link href="https://hjjjong0811.github.io/2018/09/06/Dummy4/"/>
-    <id>https://hjjjong0811.github.io/2018/09/06/Dummy4/</id>
+    <title>Dummy</title>
+    <link href="https://hjjjong0811.github.io/2018/09/06/Dummy5/"/>
+    <id>https://hjjjong0811.github.io/2018/09/06/Dummy5/</id>
     <published>2018-09-06T12:23:37.000Z</published>
-    <updated>2018-09-05T12:29:13.557Z</updated>
+    <updated>2018-09-06T17:05:50.164Z</updated>
     
     <content type="html"><![CDATA[<p>Test</p>]]></content>
     
@@ -113,7 +113,7 @@
     
     </summary>
     
-      <category term="programming" scheme="https://hjjjong0811.github.io/categories/programming/"/>
+      <category term="download" scheme="https://hjjjong0811.github.io/categories/download/"/>
     
     
       <category term="DummyTag1" scheme="https://hjjjong0811.github.io/tags/DummyTag1/"/>
@@ -122,8 +122,8 @@
   
   <entry>
     <title>깃허브 블로그 시작!</title>
-    <link href="https://hjjjong0811.github.io/2018/09/06/%EB%B8%94%EB%A1%9C%EA%B7%B8%EC%8B%9C%EC%9E%91/"/>
-    <id>https://hjjjong0811.github.io/2018/09/06/블로그시작/</id>
+    <link href="https://hjjjong0811.github.io/2018/09/06/180906%20%EB%B8%94%EB%A1%9C%EA%B7%B8%EC%8B%9C%EC%9E%91/"/>
+    <id>https://hjjjong0811.github.io/2018/09/06/180906 블로그시작/</id>
     <published>2018-09-05T15:43:00.000Z</published>
     <updated>2018-09-06T15:05:02.771Z</updated>
     

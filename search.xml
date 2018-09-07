@@ -3,14 +3,14 @@
   
     
     <entry>
-      <title>Dummy2</title>
-      <link href="/2018/09/06/Dummy2/"/>
-      <url>/2018/09/06/Dummy2/</url>
-      <content type="html"><![CDATA[<p>Test</p><figure class="highlight cpp"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">#<span class="meta-keyword">include</span> <span class="meta-string">&lt;stdio.h&gt;</span></span></span><br><span class="line"></span><br><span class="line"><span class="keyword">namespace</span> Test&#123;</span><br><span class="line">    <span class="keyword">enum</span> TestEnum&#123;</span><br><span class="line">        COOL, BANANABOAT</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="class"><span class="keyword">class</span> <span class="title">TestClass</span> :</span> <span class="keyword">public</span> Mom&#123;</span><br><span class="line">    <span class="keyword">public</span>:</span><br><span class="line">        <span class="function"><span class="keyword">static</span> TestClass <span class="title">getInstance</span><span class="params">()</span></span>&#123;</span><br><span class="line">            <span class="keyword">return</span> instance;</span><br><span class="line">        &#125;</span><br><span class="line">        <span class="function"><span class="keyword">virtual</span> <span class="keyword">void</span> <span class="title">test</span><span class="params">(<span class="keyword">int</span> param)</span> </span>= <span class="number">0</span>;</span><br><span class="line">    <span class="keyword">private</span>:</span><br><span class="line">        <span class="keyword">int</span> _mNum;  <span class="comment">//Dummy Member Var</span></span><br><span class="line">        <span class="keyword">static</span> <span class="keyword">const</span> <span class="keyword">int</span> DDDDD = <span class="number">343</span>;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">int</span> <span class="title">main</span><span class="params">()</span></span>&#123;</span><br><span class="line">    <span class="keyword">int</span> num = <span class="number">0</span>;</span><br><span class="line">    TestClass t;</span><br><span class="line"></span><br><span class="line">    <span class="keyword">for</span>(<span class="keyword">int</span> i=<span class="number">0</span>; i&lt; <span class="number">10</span>; ++i)&#123;</span><br><span class="line">        num += i;</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    <span class="keyword">return</span> <span class="number">0</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>]]></content>
+      <title>Dummy4</title>
+      <link href="/2018/09/06/Dummy4/"/>
+      <url>/2018/09/06/Dummy4/</url>
+      <content type="html"><![CDATA[<p>Test</p>]]></content>
       
       <categories>
           
-          <category> hobby </category>
+          <category> programming </category>
           
       </categories>
       
@@ -24,14 +24,14 @@
     </entry>
     
     <entry>
-      <title>Dummy</title>
-      <link href="/2018/09/06/Dummy5/"/>
-      <url>/2018/09/06/Dummy5/</url>
-      <content type="html"><![CDATA[<p>Test</p>]]></content>
+      <title>Dummy2</title>
+      <link href="/2018/09/06/Dummy2/"/>
+      <url>/2018/09/06/Dummy2/</url>
+      <content type="html"><![CDATA[<p>Test</p><figure class="highlight cpp"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">#<span class="meta-keyword">include</span> <span class="meta-string">&lt;stdio.h&gt;</span></span></span><br><span class="line"></span><br><span class="line"><span class="keyword">namespace</span> Test&#123;</span><br><span class="line">    <span class="keyword">enum</span> TestEnum&#123;</span><br><span class="line">        COOL, BANANABOAT</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="class"><span class="keyword">class</span> <span class="title">TestClass</span> :</span> <span class="keyword">public</span> Mom&#123;</span><br><span class="line">    <span class="keyword">public</span>:</span><br><span class="line">        <span class="function"><span class="keyword">static</span> TestClass <span class="title">getInstance</span><span class="params">()</span></span>&#123;</span><br><span class="line">            <span class="keyword">return</span> instance;</span><br><span class="line">        &#125;</span><br><span class="line">        <span class="function"><span class="keyword">virtual</span> <span class="keyword">void</span> <span class="title">test</span><span class="params">(<span class="keyword">int</span> param)</span> </span>= <span class="number">0</span>;</span><br><span class="line">    <span class="keyword">private</span>:</span><br><span class="line">        <span class="keyword">int</span> _mNum;  <span class="comment">//Dummy Member Var</span></span><br><span class="line">        <span class="keyword">static</span> <span class="keyword">const</span> <span class="keyword">int</span> DDDDD = <span class="number">343</span>;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">int</span> <span class="title">main</span><span class="params">()</span></span>&#123;</span><br><span class="line">    <span class="keyword">int</span> num = <span class="number">0</span>;</span><br><span class="line">    TestClass t;</span><br><span class="line"></span><br><span class="line">    <span class="keyword">for</span>(<span class="keyword">int</span> i=<span class="number">0</span>; i&lt; <span class="number">10</span>; ++i)&#123;</span><br><span class="line">        num += i;</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    <span class="keyword">return</span> <span class="number">0</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>]]></content>
       
       <categories>
           
-          <category> download </category>
+          <category> hobby </category>
           
       </categories>
       
@@ -66,14 +66,14 @@
     </entry>
     
     <entry>
-      <title>Dummy4</title>
-      <link href="/2018/09/06/Dummy4/"/>
-      <url>/2018/09/06/Dummy4/</url>
+      <title>Dummy</title>
+      <link href="/2018/09/06/Dummy5/"/>
+      <url>/2018/09/06/Dummy5/</url>
       <content type="html"><![CDATA[<p>Test</p>]]></content>
       
       <categories>
           
-          <category> programming </category>
+          <category> download </category>
           
       </categories>
       
@@ -88,8 +88,8 @@
     
     <entry>
       <title>깃허브 블로그 시작!</title>
-      <link href="/2018/09/06/%EB%B8%94%EB%A1%9C%EA%B7%B8%EC%8B%9C%EC%9E%91/"/>
-      <url>/2018/09/06/%EB%B8%94%EB%A1%9C%EA%B7%B8%EC%8B%9C%EC%9E%91/</url>
+      <link href="/2018/09/06/180906%20%EB%B8%94%EB%A1%9C%EA%B7%B8%EC%8B%9C%EC%9E%91/"/>
+      <url>/2018/09/06/180906%20%EB%B8%94%EB%A1%9C%EA%B7%B8%EC%8B%9C%EC%9E%91/</url>
       <content type="html"><![CDATA[<p>네이버 블로그를 쓰다가 꾸미는데 답답함을 느껴서 이사왔다!<br>블로그 처음 시작할때는 내용이 좀 대충이더라도 꾸준히 포스팅을 하자고 생각했는데, 공부만 아니라 포스팅하는데도 시간이 걸리다보니 계속 미루게 됐다</p><h3 id="일하면서-보고-느낀건데-스스로-어디를-어떻게-모르는지-아는게-굉장히-중요한-것-같다"><a href="#일하면서-보고-느낀건데-스스로-어디를-어떻게-모르는지-아는게-굉장히-중요한-것-같다" class="headerlink" title="일하면서 보고 느낀건데 스스로 어디를 어떻게 모르는지 아는게 굉장히 중요한 것 같다"></a>일하면서 보고 느낀건데 스스로 어디를 어떻게 모르는지 아는게 굉장히 중요한 것 같다</h3><p>그래서 요즘은 프로그래밍하다 생각할 게 있을 때면 메모장에 내가 어떻게 생각을 해나가는지 적어보고 있다! 머리 속에서 날라가게 안놔두고 적어보니까 부족한 부분이 이전보다 잘 보여서 좋다</p><h3 id="또-한번에-정리된-내용을-적으려-하면-참-부담이-많이-된다"><a href="#또-한번에-정리된-내용을-적으려-하면-참-부담이-많이-된다" class="headerlink" title="또 한번에 정리된 내용을 적으려 하면 참 부담이 많이 된다."></a>또 한번에 정리된 내용을 적으려 하면 참 부담이 많이 된다.</h3><p>중고등학교때 노트정리를 하면 꼭 단원은 대괄호, 주제는 1. , 상세 내용은 소괄호.. 나름의 규칙을 정해서 반듯하게 정리하려 노력했었는데 시간이 엄청 걸렸다. 그래서 형식을 다 없애고 싶어서 공책을 전부 찢어서 낱장으로 썼다. 얼마든지 수정할 수 있다는 안도감?을 주고 싶었다. 훨씬 효율이 나아졌다. 그 뒤로 마음속에 <strong>적당히, 대충, 빨리</strong> 세 단어를 새겼다.</p><p>그래서 이런저런 이유로 블로그 이사온 김에 이번 블로그는 좀더 빠르게 적어보려고 한다! 적어놓고 다시 보고, 다듬어나가다보면 언젠가는 한번에 좋은 포스팅을 할 수 있겠지!</p><blockquote><p>Written with <a href="https://stackedit.io/" target="_blank" rel="noopener">StackEdit</a>.</p></blockquote>]]></content>
       
       <categories>
