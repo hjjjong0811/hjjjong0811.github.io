@@ -298,7 +298,7 @@ C# Generic혹시 C#을 하신 분이라면 generic에 대해 한번은 들어봤
 <h2 id="템플릿-메타프로그래밍"><a href="#템플릿-메타프로그래밍" class="headerlink" title="템플릿 메타프로그래밍"></a>템플릿 메타프로그래밍</h2><p>템플릿 메타프로그래밍(Template Metaprogramming)은 템플릿을 이용한 프로그래밍 기법으로, 컴파일러에게 프로그램 코드를 생성하도록 하는 방식이다.<a href="https://ko.wikipedia.org/wiki/%ED%85%9C%ED%94%8C%EB%A6%BF_%EB%A9%94%ED%83%80%ED%94%84%EB%A1%9C%EA%B7%B8%EB%9E%98%EB%B0%8D" target="_blank" rel="noopener">Wiki</a></p>
 <p>Template는 컴파일 시점에 코드가 생성된다. 따라서 런타임이 아닌 컴파일 시점으로 작업을 옮길 수 있어 <strong>잘만</strong> 이용하면 효율적이다. 물론 디버깅도 어렵고 잘못하면 안좋을 것같다..</p>
 <figure class="highlight cpp"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">template</span> &lt;<span class="keyword">int</span> N&gt;</span><br><span class="line"><span class="class"><span class="keyword">struct</span> <span class="title">Factorial</span> &#123;</span></span><br><span class="line">    <span class="keyword">enum</span> &#123;value = N * Factorial&lt;N<span class="number">-1</span>&gt;::value&#125;;</span><br><span class="line">&#125;;</span><br><span class="line"><span class="keyword">template</span>&lt;&gt;</span><br><span class="line">sturct Factorial&lt;<span class="number">0</span>&gt;&#123;</span><br><span class="line">	<span class="keyword">enum</span> &#123;value = <span class="number">1</span>&#125;;</span><br><span class="line">&#125;;</span><br><span class="line"><span class="comment">//Factorial&lt;4&gt;::value == 24</span></span><br><span class="line"><span class="comment">//Factorial&lt;0&gt;::value == 1</span></span><br></pre></td></tr></table></figure>
-<p>팩토리얼이 예제로 많이 나오는데, 템플릿의 경우 컴파일 때 타입별로 코드를 생성하므로, 필요한 팩토리얼 값만 구할 수 있다. 다만 Factorial<x>::value 에서 X는 컴파일 시점에 알 수 있는 상수 값이어야 한다.</x></p>
+<p>팩토리얼이 예제로 많이 나오는데, 템플릿의 경우 컴파일 때 타입별로 코드를 생성하므로, 필요한 팩토리얼 값만 구할 수 있다. 다만 <code>Factorial&lt;X&gt;::value</code> 에서 X는 컴파일 시점에 알 수 있는 상수 값이어야 한다.</p>
 
     </div>
 
@@ -367,7 +367,7 @@ s.setAttribute('data-timestamp', +new Date());
             <li>
                 <i  class="nav_right"
                     style="cursor:pointer;"
-                    onclick="location.href='/2018/09/06/Dummy2/';">
+                    onclick="location.href='/2018/09/06/daily/180906_블로그시작/';">
                 </i>
             </li>
             
@@ -425,15 +425,15 @@ s.setAttribute('data-timestamp', +new Date());
             </li>
             
             <li>
-                <a class="footer-post" href="/2018/09/06/Dummy2/">Dummy2</a>
-            </li>
-            
-            <li>
-                <a class="footer-post" href="/2018/09/06/Dummy5/">Dummy</a>
-            </li>
-            
-            <li>
                 <a class="footer-post" href="/2018/09/06/daily/180906_블로그시작/">깃허브 블로그 시작!</a>
+            </li>
+            
+            <li>
+                <a class="footer-post" href="/2018/04/29/download/180429_화면낙서/">화면 낙서 프로그램 ScreenSketch!</a>
+            </li>
+            
+            <li>
+                <a class="footer-post" href="/2017/08/18/hobby/170818_지우개도장/">예전에 만든 지우개도장들</a>
             </li>
             
         </ul>
@@ -447,7 +447,7 @@ s.setAttribute('data-timestamp', +new Date());
     <ul>
         
         <li>
-            <a class="footer-post" href="/categories/hobby/">hobby</a>
+            <a class="footer-post" href="/categories/daily/">daily</a>
         </li>
         
         <li>
@@ -459,7 +459,7 @@ s.setAttribute('data-timestamp', +new Date());
         </li>
         
         <li>
-            <a class="footer-post" href="/categories/daily/">daily</a>
+            <a class="footer-post" href="/categories/hobby/">hobby</a>
         </li>
         
     </ul>
