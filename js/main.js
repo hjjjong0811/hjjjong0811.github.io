@@ -76,7 +76,7 @@ var actionBar = function (){
 
     function _menuShow () {
         $('.postNavContainer a').addClass('postNav-active');
-        $('#header-post').css({right: '2em'});
+        $('#header-post').css({right: '0em'});
         _postNavOn = true;
     }
 

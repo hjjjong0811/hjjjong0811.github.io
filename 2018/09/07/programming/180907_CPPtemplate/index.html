@@ -211,7 +211,7 @@ C# Generic혹시 C#을 하신 분이라면 generic에 대해 한번은 들어봤
 
     <div class="post-header">
         <h1 class="title">
-            <a href="/2018/09/07/180907_CPPtemplate/">
+            <a href="/2018/09/07/programming/180907_CPPtemplate/">
                 C++ Template란?
             </a>
         </h1>
@@ -282,7 +282,7 @@ C# Generic혹시 C#을 하신 분이라면 generic에 대해 한번은 들어봤
 <p>변수 일부에 대해 부분적으로 특수화할 수 있다.</p>
 <h2 id="함수-템플릿"><a href="#함수-템플릿" class="headerlink" title="함수 템플릿"></a>함수 템플릿</h2><figure class="highlight cpp"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">template</span> &lt;<span class="keyword">typename</span> T&gt;</span><br><span class="line"><span class="function"><span class="keyword">void</span> <span class="title">print</span><span class="params">(T value)</span></span>&#123;</span><br><span class="line">    ...</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
 <p>템플릿은 함수에도 적용될 수 있다. </p>
-<h4 id="템플릿-오버로딩"><a href="#템플릿-오버로딩" class="headerlink" title="템플릿 오버로딩"></a>템플릿 오버로딩</h4><figure class="highlight cpp"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">template</span> &lt;<span class="keyword">typename</span> T&gt;</span><br><span class="line"><span class="function"><span class="keyword">void</span> <span class="title">print</span><span class="params">(T value)</span></span>;</span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">void</span> <span class="title">print</span><span class="params">(<span class="keyword">int</span> value)</span></span>;</span><br><span class="line"></span><br><span class="line"><span class="keyword">template</span> &lt;<span class="keyword">typename</span> T1, T2&gt;</span><br><span class="line"><span class="function"><span class="keyword">void</span> <span class="title">print</span><span class="params">(T1 val1, T2 val2)</span></span>;</span><br></pre></td></tr></table></figure>
+<h3 id="템플릿-오버로딩"><a href="#템플릿-오버로딩" class="headerlink" title="템플릿 오버로딩"></a>템플릿 오버로딩</h3><figure class="highlight cpp"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">template</span> &lt;<span class="keyword">typename</span> T&gt;</span><br><span class="line"><span class="function"><span class="keyword">void</span> <span class="title">print</span><span class="params">(T value)</span></span>;</span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">void</span> <span class="title">print</span><span class="params">(<span class="keyword">int</span> value)</span></span>;</span><br><span class="line"></span><br><span class="line"><span class="keyword">template</span> &lt;<span class="keyword">typename</span> T1, T2&gt;</span><br><span class="line"><span class="function"><span class="keyword">void</span> <span class="title">print</span><span class="params">(T1 val1, T2 val2)</span></span>;</span><br></pre></td></tr></table></figure>
 <p>다른 함수들처럼 오버로딩할 수 있다.</p>
 <h1 id="장단점"><a href="#장단점" class="headerlink" title="장단점"></a>장단점</h1><p><strong>장점</strong></p>
 <ul>
@@ -380,17 +380,20 @@ s.setAttribute('data-timestamp', +new Date());
         </ul>
     </span>
     <br/>
-    <div id="toc">
-    <ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#C-Generic"><span class="toc-number">1.</span> <span class="toc-text">C# Generic</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#C-generic-C-template"><span class="toc-number">1.1.</span> <span class="toc-text">C# generic / C++ template</span></a></li></ol></li><li class="toc-item toc-level-1"><a class="toc-link" href="#Template-란"><span class="toc-number">2.</span> <span class="toc-text">Template 란</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#Template의-종류"><span class="toc-number">3.</span> <span class="toc-text">Template의 종류</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#클래스-템플릿"><span class="toc-number">3.1.</span> <span class="toc-text">클래스 템플릿</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#명시적특수화"><span class="toc-number">3.1.1.</span> <span class="toc-text">명시적특수화</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#부분특수화"><span class="toc-number">3.1.2.</span> <span class="toc-text">부분특수화</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#함수-템플릿"><span class="toc-number">3.2.</span> <span class="toc-text">함수 템플릿</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#템플릿-오버로딩"><span class="toc-number">3.2.0.1.</span> <span class="toc-text">템플릿 오버로딩</span></a></li></ol></li></ol></li></ol></li><li class="toc-item toc-level-1"><a class="toc-link" href="#장단점"><span class="toc-number">4.</span> <span class="toc-text">장단점</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#ETC"><span class="toc-number">5.</span> <span class="toc-text">ETC</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#typename-class"><span class="toc-number">5.1.</span> <span class="toc-text">typename? class?</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#템플릿-메타프로그래밍"><span class="toc-number">5.2.</span> <span class="toc-text">템플릿 메타프로그래밍</span></a></li></ol></li></ol>
-    </div>
 
-    
+    <div id="pageContentView">
+        <div id="toc">
+        <ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#C-Generic"><span class="toc-text">C# Generic</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#C-generic-C-template"><span class="toc-text">C# generic / C++ template</span></a></li></ol></li><li class="toc-item toc-level-1"><a class="toc-link" href="#Template-란"><span class="toc-text">Template 란</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#Template의-종류"><span class="toc-text">Template의 종류</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#클래스-템플릿"><span class="toc-text">클래스 템플릿</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#명시적특수화"><span class="toc-text">명시적특수화</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#부분특수화"><span class="toc-text">부분특수화</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#함수-템플릿"><span class="toc-text">함수 템플릿</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#템플릿-오버로딩"><span class="toc-text">템플릿 오버로딩</span></a></li></ol></li></ol></li><li class="toc-item toc-level-1"><a class="toc-link" href="#장단점"><span class="toc-text">장단점</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#ETC"><span class="toc-text">ETC</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#typename-class"><span class="toc-text">typename? class?</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#템플릿-메타프로그래밍"><span class="toc-text">템플릿 메타프로그래밍</span></a></li></ol></li></ol>
+        </div>
 
-    
-    <div id="tags">
-        <a href="/tags/C/">#C++</a><br/> <a href="/tags/template/">#template</a><br/>
+        
+
+        
+        <div id="tags">
+            <a href="/tags/C/">#C++</a><br/> <a href="/tags/template/">#template</a><br/>
+        </div>
+        
     </div>
-    
 </div>
 
 
@@ -418,7 +421,7 @@ s.setAttribute('data-timestamp', +new Date());
         <ul>
             
             <li>
-                <a class="footer-post" href="/2018/09/07/180907_CPPtemplate/">C++ Template란?</a>
+                <a class="footer-post" href="/2018/09/07/programming/180907_CPPtemplate/">C++ Template란?</a>
             </li>
             
             <li>
@@ -426,11 +429,11 @@ s.setAttribute('data-timestamp', +new Date());
             </li>
             
             <li>
-                <a class="footer-post" href="/2018/09/06/Dummy3/">Dummy3</a>
+                <a class="footer-post" href="/2018/09/06/Dummy5/">Dummy</a>
             </li>
             
             <li>
-                <a class="footer-post" href="/2018/09/06/Dummy5/">Dummy</a>
+                <a class="footer-post" href="/2018/09/06/Dummy3/">Dummy3</a>
             </li>
             
         </ul>
@@ -444,19 +447,19 @@ s.setAttribute('data-timestamp', +new Date());
     <ul>
         
         <li>
+            <a class="footer-post" href="/categories/hobby/">hobby</a>
+        </li>
+        
+        <li>
+            <a class="footer-post" href="/categories/download/">download</a>
+        </li>
+        
+        <li>
             <a class="footer-post" href="/categories/daily/">daily</a>
         </li>
         
         <li>
             <a class="footer-post" href="/categories/programming/">programming</a>
-        </li>
-        
-        <li>
-            <a class="footer-post" href="/categories/hobby/">hobby</a>
-        </li>
-        
-        <li>
-            <a class="footer-post" href="/categories/information/">information</a>
         </li>
         
     </ul>

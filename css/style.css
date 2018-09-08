@@ -865,20 +865,17 @@ figure.highlight table tbody tr td pre .deletion {
   display: inline-block;
   position: fixed;
   float: right;
-  top: 7em;
   max-width: 300px;
-  border-top: 1px solid rgba(255,255,255,0.533);
-  transition: right 0.3s ease;
+  height: 100%;
+  background-color: rgba(0,0,0,0.502);
+  padding: 7em 2em 2em 2em;
+  top: 0em;
   right: -300px;
+  transition: right 0.3s ease;
 }
 @media screen and (max-width: 300px) {
   #header-post {
-    max-width: calc(100% - 4em);
-  }
-}
-@media (max-width: 61.9em) {
-  #header-post {
-    background-color: rgba(0,0,0,0.502);
+    max-width: calc(100%);
   }
 }
 #header-post * {
@@ -896,29 +893,20 @@ figure.highlight table tbody tr td pre .deletion {
 #header-post a.icon:hover {
   color: #f05f70;
 }
-#header-post ol {
-  list-style-type: none;
-}
-#header-post ul {
-  display: inline-block;
-  margin: 0;
-  padding: 0;
-  list-style-type: none;
-}
-#header-post ul li {
-  display: inline-block;
-  margin-right: 15px;
-  vertical-align: middle;
-}
-#header-post ul li:last-child {
-  margin-right: 0;
-}
 #header-post #actions {
   float: right;
   text-align: right;
 }
 #header-post #actions ul {
   display: block;
+}
+#header-post #actions ul li {
+  display: inline-block;
+  margin-right: 15px;
+  vertical-align: middle;
+}
+#header-post #actions ul li:last-child {
+  margin-right: 0;
 }
 #header-post #actions i {
   font-family: FontAwesome;
@@ -941,29 +929,46 @@ figure.highlight table tbody tr td pre .deletion {
 #header-post #actions .nav_left:before {
   content: "\f060";
 }
+#header-post #pageContentView {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-flow: column;
+      flex-flow: column;
+  width: 100%;
+  height: calc(100% - 2em);
+}
 #header-post #toc {
   float: right;
   clear: both;
   overflow-y: scroll;
   margin-top: 1rem;
-  max-width: 300px;
-  max-height: calc(95vh - 15rem);
-  text-align: right;
+  max-width: 100%;
+  -ms-flex: 1;
+      flex: 1;
+  text-align: left;
+}
+#header-post #toc ol {
+  margin: 0;
+  padding-left: 1em;
+}
+#header-post #toc ul {
+  display: inline-block;
+  margin: 0;
+}
+#header-post #toc li {
+  margin-right: 15px;
+  vertical-align: middle;
 }
 #header-post #toc a:hover {
   text-shadow: none;
   color: #f05f70;
 }
-#header-post #toc .toc-level-1 > .toc-link {
+#header-post #toc .toc-level-1 {
   color: #d7ecff;
 }
 #header-post #toc .toc-level-2 {
   color: #5ba4bb;
   font-size: 0.8rem;
-}
-#header-post #toc .toc-level-2:before {
-  color: #5ba4bb;
-  content: "#";
 }
 #header-post #toc .toc-level-3 {
   color: #7b95ac;
@@ -986,7 +991,7 @@ figure.highlight table tbody tr td pre .deletion {
   float: right;
   margin-top: 1rem;
   position: relative;
-  text-align: right;
+  text-align: left;
 }
 #header-post #tags a {
   color: #f05f70;
