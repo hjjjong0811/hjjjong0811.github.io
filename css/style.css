@@ -382,28 +382,23 @@ section.main {
 }
 section.main .posts-container {
   width: 100%;
-  padding: 10px;
+  position: relative;
 }
 section.main .posts-container .post-index-container {
-  overflow: hidden;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
-  -ms-flex-flow: row nowrap;
-      flex-flow: row nowrap;
-  -ms-flex-pack: start;
-      justify-content: flex-start;
-  -ms-flex-align: start;
-      align-items: flex-start;
   position: relative;
-  width: calc(25% - 25px);
+  display: inline-block;
+  width: calc(25% - 20px);
+  margin-bottom: 10px;
+  min-height: 150px;
   height: auto;
-  margin: 10px;
+  overflow: hidden;
+  background-size: cover;
   border-left: 1px solid #d7ecff;
   border-right: 1px solid #d7ecff;
 }
 @media (max-width: 47.9em) {
   section.main .posts-container .post-index-container {
-    width: calc(50% - 30px);
+    width: calc(50% - 20px);
   }
 }
 section.main .posts-container .post-index-container:hover .post-infos {
@@ -412,9 +407,6 @@ section.main .posts-container .post-index-container:hover .post-infos {
 }
 section.main .posts-container .post-index-container:hover:before {
   right: 0px;
-}
-section.main .posts-container .post-index-container:hover:after {
-  left: 0px;
 }
 section.main .posts-container .post-index-container:before {
   position: absolute;
@@ -426,18 +418,6 @@ section.main .posts-container .post-index-container:before {
   border-bottom: 1px solid #d7ecff;
   border-top: 1px solid #d7ecff;
   transition: right 0.3s ease;
-}
-section.main .posts-container .post-index-container .post-index-back {
-  position: absolute;
-  display: block;
-  width: 100%;
-  min-height: 150px;
-  height: 100%;
-  background-size: cover;
-  -moz-filter: blur(3px);
-  -o-filter: blur(3px);
-  -ms-filter: blur(3px);
-  filter: blur(3px);
 }
 section.main .posts-container .post-index-container .post-infos {
   position: relative;
@@ -479,12 +459,6 @@ section.main .posts-container .post-index-container .post-infos .post-info {
 section.main .posts-container .post-index-container .post-infos .post-info span {
   padding: 10px;
 }
-section.main .posts-container .post-index-container .post-infos.hover:before {
-  left: 5px;
-}
-section.main .posts-container .post-index-container .post-infos.hover:after {
-  right: 5px;
-}
 section.main .posts-container .post-index-container .post-infos .post-tags {
   border-top: 1px solid #d7ecff;
   margin-top: 10px;
@@ -518,6 +492,10 @@ section.main .featherlight .featherlight-content .featherlight-close:hover {
   .archive-container {
     margin-top: 0;
   }
+}
+.archive-container .archive-year-title {
+  margin-top: 30px;
+  border-bottom: 1px solid #d7ecff;
 }
 .archive-container .archive-post {
   margin: 10px 0;

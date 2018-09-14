@@ -10,7 +10,7 @@
 
   gtag('config', 'UA-125225544-1');
 </script>
-
+<script src="https://unpkg.com/masonry-layout@4/dist/masonry.pkgd.min.js"></script>
 <!-- Head tag -->
 <head>
 
@@ -210,12 +210,12 @@
             <div class="posts-container">
             
                 
+
+
 <div class="post-index-container" 
-    style="cursor:pointer;"
+    style="cursor:pointer; background-image: url(/images/dinosaur-958012_1280.jpg);"
     onclick="location.href='/2018/07/21/information/180721_VisualStudio_Linux_원격개발/';">
-    
-    <div class="post-index-back" style="background-image: url(/images/dinosaur-958012_1280.jpg);"/></div>
-    
+
     <div class="post-infos">
         <h1 class="title">
             <a href="/2018/07/21/information/180721_VisualStudio_Linux_원격개발/">
@@ -243,6 +243,14 @@
 </div>
             
             </div>
+            <script>
+                var grid = new Masonry('.posts-container', {
+                    gutter: 10,
+                    columnWidth: '.post-index-container',
+                    itemSelector: '.post-index-container',
+                    percentPosition: true
+                });
+            </script>
         </section>
     </div>
 </div>
@@ -269,19 +277,19 @@
         <ul>
             
             <li>
+                <a class="footer-post" href="/2018/09/14/hobby/180914_그림/">그동안 그렸던 그림들</a>
+            </li>
+            
+            <li>
+                <a class="footer-post" href="/2018/09/14/daily/180914_옛날프로젝트영상/">옛날 프로젝트 영상찾았다</a>
+            </li>
+            
+            <li>
                 <a class="footer-post" href="/2018/09/13/programming/180913_CPP가상함수/">C++ 가상함수에 대해서</a>
             </li>
             
             <li>
                 <a class="footer-post" href="/2018/09/07/programming/180907_CPPtemplate/">C++ Template란?</a>
-            </li>
-            
-            <li>
-                <a class="footer-post" href="/2018/09/06/daily/180906_블로그시작/">깃허브 블로그 시작!</a>
-            </li>
-            
-            <li>
-                <a class="footer-post" href="/2018/07/21/information/180721_VisualStudio_Linux_원격개발/">Visual Studio로 Linux 원격 개</a>
             </li>
             
         </ul>
@@ -303,7 +311,7 @@
         </li>
         
         <li>
-            <a class="footer-post" href="/categories/hobby/">hobby</a>
+            <a class="footer-post" href="/categories/programming/">programming</a>
         </li>
         
         <li>
