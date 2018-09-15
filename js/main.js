@@ -24,7 +24,7 @@ var alphaDust = function () {
         $('.menu-item').css({opacity: 0});
         TweenLite.to('.menu-container', 1, {padding: '0 40px'});
         TweenLite.to('.menu-bg', 1, {opacity: '0.92'});
-        TweenMax.staggerTo('.menu-item', 0.5, {opacity: 1}, 0.1);
+        TweenMax.staggerTo('.menu-item', 0.5, {opacity: 1}, 0.08);
         _menuOn = true;
 
         $('.menu-bg').hover(function () {
@@ -61,7 +61,7 @@ var alphaDust = function () {
 
     function displayArchives() {
         $('.archive-post').css({opacity: 0});
-        TweenMax.staggerTo('.archive-post', 0.4, {opacity: 1}, 0.15);
+        TweenMax.staggerTo('.archive-post', 0.4, {opacity: 1}, 0.05);
     }
 
     return {

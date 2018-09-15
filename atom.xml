@@ -47,15 +47,15 @@
     <link href="https://hjjjong0811.github.io/2018/09/14/daily/180914_%EC%98%9B%EB%82%A0%ED%94%84%EB%A1%9C%EC%A0%9D%ED%8A%B8%EC%98%81%EC%83%81/"/>
     <id>https://hjjjong0811.github.io/2018/09/14/daily/180914_옛날프로젝트영상/</id>
     <published>2018-09-14T07:12:00.000Z</published>
-    <updated>2018-09-14T07:19:36.402Z</updated>
+    <updated>2018-09-15T11:32:27.418Z</updated>
     
-    <content type="html"><![CDATA[<iframe width="560" height="315" src="https://www.youtube.com/embed/DF5fNkViXdo" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe><p>추억이다ㅠㅠ</p>]]></content>
+    <content type="html"><![CDATA[<div id="video-container"><br>    <iframe id="video" src="https://www.youtube.com/embed/DF5fNkViXdo" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe><br></div><p>추억이다ㅠㅠ</p>]]></content>
     
     <summary type="html">
     
       
       
-        &lt;iframe width=&quot;560&quot; height=&quot;315&quot; src=&quot;https://www.youtube.com/embed/DF5fNkViXdo&quot; frameborder=&quot;0&quot; allow=&quot;autoplay; encrypted-media&quot; allowfull
+        &lt;div id=&quot;video-container&quot;&gt;&lt;br&gt;    &lt;iframe id=&quot;video&quot; src=&quot;https://www.youtube.com/embed/DF5fNkViXdo&quot; frameborder=&quot;0&quot; allow=&quot;autoplay; encryp
       
     
     </summary>
@@ -216,38 +216,6 @@
   </entry>
   
   <entry>
-    <title>PPT 깔끔 템플릿 무료</title>
-    <link href="https://hjjjong0811.github.io/2018/04/29/download/170902_PPT%ED%85%9C%ED%94%8C%EB%A6%BF/"/>
-    <id>https://hjjjong0811.github.io/2018/04/29/download/170902_PPT템플릿/</id>
-    <published>2018-04-28T18:17:00.000Z</published>
-    <updated>2018-09-14T07:35:30.232Z</updated>
-    
-    <content type="html"><![CDATA[<p><em>Update History</em></p><ul><li>2017.09.03 ver2 색상 적용</li><li>2018.09.14 ver3 폰트 크기, 마스터 배경 수정</li></ul><p><strong><a href="/files/PPT템플릿_깔끔템플릿_ver3.pptx">PPT템플릿 ver3 Download</a></strong></p><p>PPT 디자인에 신경안쓰던 공대생입니다! 처음 만들어본거라 많이 미흡하지만 공유합니다</p><p>예시로 아무말 좀 써놨는데, 슬라이드 삭제하시고 쓰시면 됩니다</p><p><strong>자유롭게 이용</strong>하셔도 좋으나  <strong>재배포는 금지</strong>합니다</p><p>폰트는 <strong>한둥근체</strong> 이용하였으며, 한둥근체는 윤디자인에서 제작하여 무료로 배포하고 있습니다 한둥근체는 <a href="http://font.co.kr/yoonfont/free/free_won.asp" target="_blank" rel="noopener">여기</a>에서 다운로드 받으실수 있습니다.</p><p>제목 슬라이드에는 애니메이션 효과를 적용해놓았는데, 마음에 안드시는 분은 마스터슬라이드에서 애니메이션 효과를 없애시면 됩니다</p><p>마스터 슬라이드 적용해놔서 PPT 디자인이 귀찮으신 분들이 쓰기 편하실 겁니다</p>]]></content>
-    
-    <summary type="html">
-    
-      
-      
-        &lt;p&gt;&lt;em&gt;Update History&lt;/em&gt;&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;2017.09.03 ver2 색상 적용&lt;/li&gt;
-&lt;li&gt;2018.09.14 ver3 폰트 크기, 마스터 배경 수정&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;&lt;strong&gt;&lt;a href=&quot;/file
-      
-    
-    </summary>
-    
-      <category term="download" scheme="https://hjjjong0811.github.io/categories/download/"/>
-    
-    
-      <category term="프로그램" scheme="https://hjjjong0811.github.io/tags/%ED%94%84%EB%A1%9C%EA%B7%B8%EB%9E%A8/"/>
-    
-      <category term="화면낙서" scheme="https://hjjjong0811.github.io/tags/%ED%99%94%EB%A9%B4%EB%82%99%EC%84%9C/"/>
-    
-  </entry>
-  
-  <entry>
     <title>오랜만에 테일즈런너했다 육개장맨으로</title>
     <link href="https://hjjjong0811.github.io/2018/04/10/hobby/180410_%ED%85%8C%EC%9D%BC%EC%A6%88%EB%9F%B0%EB%84%88%EC%9C%A1%EA%B0%9C%EC%9E%A5%EB%A7%A8/"/>
     <id>https://hjjjong0811.github.io/2018/04/10/hobby/180410_테일즈런너육개장맨/</id>
@@ -311,6 +279,38 @@
   </entry>
   
   <entry>
+    <title>PPT 깔끔 템플릿 무료</title>
+    <link href="https://hjjjong0811.github.io/2017/09/02/download/170902_PPT%ED%85%9C%ED%94%8C%EB%A6%BF/"/>
+    <id>https://hjjjong0811.github.io/2017/09/02/download/170902_PPT템플릿/</id>
+    <published>2017-09-02T08:13:00.000Z</published>
+    <updated>2018-09-15T11:21:29.125Z</updated>
+    
+    <content type="html"><![CDATA[<p><em>Update History</em></p><ul><li>2017.09.03 ver2 색상 적용</li><li>2018.09.14 ver3 폰트 크기, 마스터 배경 수정</li></ul><p><strong><a href="/files/PPT템플릿_깔끔템플릿_ver3.pptx">PPT템플릿 ver3 Download</a></strong></p><p>PPT 디자인에 신경안쓰던 공대생입니다! 처음 만들어본거라 많이 미흡하지만 공유합니다</p><p>예시로 아무말 좀 써놨는데, 슬라이드 삭제하시고 쓰시면 됩니다</p><p><strong>자유롭게 이용</strong>하셔도 좋으나  <strong>재배포는 금지</strong>합니다</p><p>폰트는 <strong>한둥근체</strong> 이용하였으며, 한둥근체는 윤디자인에서 제작하여 무료로 배포하고 있습니다 한둥근체는 <a href="http://font.co.kr/yoonfont/free/free_won.asp" target="_blank" rel="noopener">여기</a>에서 다운로드 받으실수 있습니다.</p><p>제목 슬라이드에는 애니메이션 효과를 적용해놓았는데, 마음에 안드시는 분은 마스터슬라이드에서 애니메이션 효과를 없애시면 됩니다</p><p>마스터 슬라이드 적용해놔서 PPT 디자인이 귀찮으신 분들이 쓰기 편하실 겁니다</p>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;p&gt;&lt;em&gt;Update History&lt;/em&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;2017.09.03 ver2 색상 적용&lt;/li&gt;
+&lt;li&gt;2018.09.14 ver3 폰트 크기, 마스터 배경 수정&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;strong&gt;&lt;a href=&quot;/file
+      
+    
+    </summary>
+    
+      <category term="download" scheme="https://hjjjong0811.github.io/categories/download/"/>
+    
+    
+      <category term="프로그램" scheme="https://hjjjong0811.github.io/tags/%ED%94%84%EB%A1%9C%EA%B7%B8%EB%9E%A8/"/>
+    
+      <category term="화면낙서" scheme="https://hjjjong0811.github.io/tags/%ED%99%94%EB%A9%B4%EB%82%99%EC%84%9C/"/>
+    
+  </entry>
+  
+  <entry>
     <title>예전에 만든 지우개도장들</title>
     <link href="https://hjjjong0811.github.io/2017/08/18/hobby/170818_%EC%A7%80%EC%9A%B0%EA%B0%9C%EB%8F%84%EC%9E%A5/"/>
     <id>https://hjjjong0811.github.io/2017/08/18/hobby/170818_지우개도장/</id>
@@ -341,9 +341,9 @@
     <link href="https://hjjjong0811.github.io/2017/07/21/hobby/170721_%EB%82%98%EB%8A%94%EB%B9%B5%EC%9D%B4%EB%8B%A4/"/>
     <id>https://hjjjong0811.github.io/2017/07/21/hobby/170721_나는빵이다/</id>
     <published>2017-07-21T05:45:00.000Z</published>
-    <updated>2018-09-14T07:10:34.336Z</updated>
+    <updated>2018-09-15T11:32:59.351Z</updated>
     
-    <content type="html"><![CDATA[<p>나는 빵이다 라는 게임을 세일해서 3000원정도?에 싸게 샀어요</p><p>빵이 토스트가 되는 게임인데 신박하고 재밌습니다</p><iframe width="560" height="315" src="https://www.youtube.com/embed/Ov2S9N8yYr4" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>]]></content>
+    <content type="html"><![CDATA[<p>나는 빵이다 라는 게임을 세일해서 3000원정도?에 싸게 샀어요</p><p>빵이 토스트가 되는 게임인데 신박하고 재밌습니다</p><div id="video-container"><br>    <iframe id="video" src="https://www.youtube.com/embed/Ov2S9N8yYr4" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe><br></div>]]></content>
     
     <summary type="html">
     
@@ -351,7 +351,7 @@
       
         &lt;p&gt;나는 빵이다 라는 게임을 세일해서 3000원정도?에 싸게 샀어요&lt;/p&gt;
 &lt;p&gt;빵이 토스트가 되는 게임인데 신박하고 재밌습니다&lt;/p&gt;
-&lt;iframe width=&quot;560&quot; height=&quot;315&quot; src=&quot;https://www.youtube.com/e
+&lt;div id=&quot;video-container&quot;&gt;&lt;br&gt;    &lt;iframe id=&quot;video&quot; src=&quot;https
       
     
     </summary>
