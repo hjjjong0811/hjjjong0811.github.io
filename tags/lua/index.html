@@ -20,8 +20,6 @@
 
     <!--Description-->
     
-        <meta name="description" content="추억이다ㅠㅠ">
-    
 
     <!--Author-->
     
@@ -30,7 +28,7 @@
 
     <!--Open Graph Title-->
     
-        <meta property="og:title" content="옛날 프로젝트 영상찾았다"/>
+        <meta property="og:title" content="JJONGLOG"/>
     
 
     <!--Open Graph Description-->
@@ -41,7 +39,7 @@
 
     <!--Type page-->
     
-        <meta property="og:type" content="article" />
+        <meta property="og:type" content="website" />
     
 
     <!--Page Cover-->
@@ -52,7 +50,7 @@
 
     <!-- Title -->
     
-    <title>옛날 프로젝트 영상찾았다 - JJONGLOG</title>
+    <title>lua - JJONGLOG</title>
 
     <!-- Bootstrap Core CSS -->
     <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.2/css/bootstrap.min.css" integrity="sha384-y3tfxAZXuh4HwSYylfB+J125MxIs6mR5FOHamPBG064zB+AFeWH94NdvaCBm8qnd" crossorigin="anonymous">
@@ -193,7 +191,9 @@
 
 <div class="container">
     <!-- Main Content -->
-    <div class="row">
+    
+
+<div class="row">
     <div class="col-sm-12">
 
         <!--Title and Logo-->
@@ -201,152 +201,62 @@
     <div class="logo">
         <a href="/"><i class="logo-icon fa fa-cube" aria-hidden="true"></i></a>
         
+            <h1 id="main-title" class="title">#lua</h1>
+        
     </div>
 </header>
 
         <section class="main">
+            <div class="posts-container">
             
-<div class="post">
+                
 
-    <div class="post-header">
+
+<div class="post-index-container" 
+    style="cursor:pointer; background-image: url(/images/programming/180924_루아스크립트가뭐지_0.jpg);"
+    onclick="location.href='/2018/09/24/programming/180924_루아스크립트/';">
+
+    <div class="post-infos">
         <h1 class="title">
-            <a href="/2018/09/14/daily/180914_옛날프로젝트영상/">
-                옛날 프로젝트 영상찾았다
+            <a href="/2018/09/24/programming/180924_루아스크립트/">
+                루아스크립트가 뭐지
             </a>
         </h1>
         <div class="post-info">
             
-                <span class="date">2018-09-14</span>
-            
-            
-                <a href="#disqus_thread" class="comments">Comments</a>
+                <span class="date">2018-09-24</span>
             
             
                 <span class="category">
-                    <a href="/categories/daily/">daily</a>
+                    <br/>
+                    <a href="/categories/programming/">programming</a>
                 </span>
             
         </div>
-    </div>
-
-    <div class="content">
-
-        <!-- Gallery -->
-        
-
-        <!-- Post Content -->
-        <div id="video-container"><br>    <iframe id="video" src="https://www.youtube.com/embed/DF5fNkViXdo" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe><br></div>
-
-<p>추억이다ㅠㅠ</p>
-
-    </div>
-
-    
-
-    
         <div class="post-tags">
-            <i class="fa fa-tags" aria-hidden="true"></i>
-            <a href="/tags/프로젝트/">#프로젝트</a> <a href="/tags/게임/">#게임</a>
+        
+        
+            <a href="/tags/게임/">#게임</a> <a href="/tags/C/">#C++</a> <a href="/tags/lua/">#lua</a> <a href="/tags/메이플스토리2/">#메이플스토리2</a>
+        
         </div>
-    
-
-    <!-- Comments -->
-    
-    <div class="comments">
-        <!-- 
-<div id="disqus_thread">
-    <noscript>Please enable JavaScript to view the <a href="//disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
-</div>
-
-
- -->
-
-
-<div id="disqus_thread"></div>
-<script>
-
-/**
-*  RECOMMENDED CONFIGURATION VARIABLES: EDIT AND UNCOMMENT THE SECTION BELOW TO INSERT DYNAMIC VALUES FROM YOUR PLATFORM OR CMS.
-*  LEARN WHY DEFINING THESE VARIABLES IS IMPORTANT: https://disqus.com/admin/universalcode/#configuration-variables*/
-/*
-var disqus_config = function () {
-this.page.url = PAGE_URL;  // Replace PAGE_URL with your page's canonical URL variable
-this.page.identifier = PAGE_IDENTIFIER; // Replace PAGE_IDENTIFIER with your page's unique identifier variable
-};
-*/
-(function() { // DON'T EDIT BELOW THIS LINE
-var d = document, s = d.createElement('script');
-s.src = 'https://jjonglog.disqus.com/embed.js';
-s.setAttribute('data-timestamp', +new Date());
-(d.head || d.body).appendChild(s);
-})();
-</script>
-<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
-
-
-                            
     </div>
-    
-
 </div>
+            
+            </div>
+            <script>
+                var grid = new Masonry('.posts-container', {
+                    gutter: 10,
+                    columnWidth: '.post-index-container',
+                    itemSelector: '.post-index-container',
+                    percentPosition: true
+                });
+            </script>
         </section>
-
     </div>
 </div>
-
 </div>
 
 <!-- Post Nav -->
-
-    <div id="header-post">
-    <span id="actions">
-        <ul>
-            
-            <li>
-                <i  class="nav_left"
-                    style="cursor:pointer;"
-                    onclick="location.href='/2018/09/14/hobby/180914_그림/';">
-                </i>
-            </li>
-            
-            
-            <li>
-                <i  class="nav_right"
-                    style="cursor:pointer;"
-                    onclick="location.href='/2018/09/13/programming/180913_CPP가상함수/';">
-                </i>
-            </li>
-            
-            <li>
-                <i  class="nav_up"
-                    style="cursor:pointer;"
-                    onclick="$('html, body').animate({ scrollTop: 0 }, 'fast');">
-                </i>
-            </li>
-        </ul>
-    </span>
-    <br/>
-
-    <div id="pageContentView">
-        <div id="toc">
-        
-        </div>
-
-        
-
-        
-        <div id="tags">
-            <a href="/tags/프로젝트/">#프로젝트</a><br/> <a href="/tags/게임/">#게임</a><br/>
-        </div>
-        
-    </div>
-</div>
-
-
-<!--Show/Hide Icon-->
-<div class="postNavContainer">
-    <a class="postNav postNav-active" href="#postNav"></a>
-</div>
 
 
 <!-- Footer -->
@@ -461,7 +371,7 @@ s.setAttribute('data-timestamp', +new Date());
         var dsq = document.createElement('script');
         dsq.type = 'text/javascript';
         dsq.async = true;
-        dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+        dsq.src = '//' + disqus_shortname + '.disqus.com/count.js';
         (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
     }());
 </script>
