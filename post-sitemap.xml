@@ -7,22 +7,26 @@
     </url>
 
     <url>
-        <loc>https://hjjjong0811.github.io/2018/09/24/programming/180924_%EB%A3%A8%EC%95%84%EC%8A%A4%ED%81%AC%EB%A6%BD%ED%8A%B8/</loc>
-        <lastmod>2018-09-24T05:55:09.561Z</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.6</priority>
-
-    </url>
-
-    <url>
-        <loc>https://hjjjong0811.github.io/2018/09/15/hobby/180915_%EC%8A%A4%EC%BB%AC%ED%94%BC%ED%94%BC%EA%B7%9C%EC%96%B4/</loc>
-        <lastmod>2018-09-15T15:22:31.541Z</lastmod>
+        <loc>https://hjjjong0811.github.io/2018/09/26/hobby/180926_%EA%B1%B4%EB%8B%B4%EC%A2%85%EC%9D%B4%EB%AA%A8%ED%98%95/</loc>
+        <lastmod>2018-09-26T08:24:24.621Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.6</priority>
 
         <image:image>
 
-            <image:loc>https://hjjjong0811.github.io/images/hobby/180915_%EC%8A%A4%EC%BB%AC%ED%94%BC%ED%94%BC%EA%B7%9C%EC%96%B4_1.jpg</image:loc>
+            <image:loc>https://hjjjong0811.github.io/images/hobby/180926_%EA%B1%B4%EB%8B%B4%EC%A2%85%EC%9D%B4%EB%AA%A8%ED%98%95_1.jpg</image:loc>
+
+        </image:image>
+
+        <image:image>
+
+            <image:loc>https://hjjjong0811.github.io/images/hobby/180926_%EA%B1%B4%EB%8B%B4%EC%A2%85%EC%9D%B4%EB%AA%A8%ED%98%95_2.jpg</image:loc>
+
+        </image:image>
+
+        <image:image>
+
+            <image:loc>https://hjjjong0811.github.io/images/hobby/180926_%EA%B1%B4%EB%8B%B4%EC%A2%85%EC%9D%B4%EB%AA%A8%ED%98%95_3.jpg</image:loc>
 
         </image:image>
 
@@ -30,7 +34,7 @@
 
     <url>
         <loc>https://hjjjong0811.github.io/2017/08/18/hobby/170818_%EC%A7%80%EC%9A%B0%EA%B0%9C%EB%8F%84%EC%9E%A5/</loc>
-        <lastmod>2018-09-15T15:17:44.601Z</lastmod>
+        <lastmod>2018-09-26T08:24:16.247Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.6</priority>
 
@@ -61,6 +65,28 @@
         <image:image>
 
             <image:loc>https://hjjjong0811.github.io/images/hobby/170818_%EC%A7%80%EC%9A%B0%EA%B0%9C%EB%8F%84%EC%9E%A5_5.jpg</image:loc>
+
+        </image:image>
+
+    </url>
+
+    <url>
+        <loc>https://hjjjong0811.github.io/2018/09/24/programming/180924_%EB%A3%A8%EC%95%84%EC%8A%A4%ED%81%AC%EB%A6%BD%ED%8A%B8/</loc>
+        <lastmod>2018-09-24T05:55:09.561Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.6</priority>
+
+    </url>
+
+    <url>
+        <loc>https://hjjjong0811.github.io/2018/09/15/hobby/180915_%EC%8A%A4%EC%BB%AC%ED%94%BC%ED%94%BC%EA%B7%9C%EC%96%B4/</loc>
+        <lastmod>2018-09-15T15:22:31.541Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.6</priority>
+
+        <image:image>
+
+            <image:loc>https://hjjjong0811.github.io/images/hobby/180915_%EC%8A%A4%EC%BB%AC%ED%94%BC%ED%94%BC%EA%B7%9C%EC%96%B4_1.jpg</image:loc>
 
         </image:image>
 
