@@ -21,13 +21,6 @@
     </url>
 
     <url>
-        <loc>https://hjjjong0811.github.io/categories/programming/</loc>
-        <lastmod>2018-09-24T05:55:09.561Z</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.2</priority>
-    </url>
-
-    <url>
         <loc>https://hjjjong0811.github.io/categories/hobby/</loc>
         <lastmod>2018-12-29T06:46:06.447Z</lastmod>
         <changefreq>weekly</changefreq>
@@ -37,6 +30,13 @@
     <url>
         <loc>https://hjjjong0811.github.io/categories/daily/</loc>
         <lastmod>2019-04-28T14:00:15.063Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.2</priority>
+    </url>
+
+    <url>
+        <loc>https://hjjjong0811.github.io/categories/programming/</loc>
+        <lastmod>2019-05-12T04:36:40.650Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.2</priority>
     </url>

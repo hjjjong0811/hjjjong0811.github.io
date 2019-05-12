@@ -7,6 +7,22 @@
     </url>
 
     <url>
+        <loc>https://hjjjong0811.github.io/2018/07/21/programming/180721_VisualStudio_Linux_%EC%9B%90%EA%B2%A9%EA%B0%9C%EB%B0%9C/</loc>
+        <lastmod>2019-05-12T04:36:40.650Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.6</priority>
+
+    </url>
+
+    <url>
+        <loc>https://hjjjong0811.github.io/2018/09/24/programming/180924_%EB%A3%A8%EC%95%84%EC%8A%A4%ED%81%AC%EB%A6%BD%ED%8A%B8/</loc>
+        <lastmod>2019-05-12T04:33:05.808Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.6</priority>
+
+    </url>
+
+    <url>
         <loc>https://hjjjong0811.github.io/2019/04/28/daily/post/</loc>
         <lastmod>2019-04-28T14:00:15.063Z</lastmod>
         <changefreq>weekly</changefreq>
@@ -83,14 +99,6 @@
             <image:loc>https://hjjjong0811.github.io/images/hobby/170818_%EC%A7%80%EC%9A%B0%EA%B0%9C%EB%8F%84%EC%9E%A5_5.jpg</image:loc>
 
         </image:image>
-
-    </url>
-
-    <url>
-        <loc>https://hjjjong0811.github.io/2018/09/24/programming/180924_%EB%A3%A8%EC%95%84%EC%8A%A4%ED%81%AC%EB%A6%BD%ED%8A%B8/</loc>
-        <lastmod>2018-09-24T05:55:09.561Z</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.6</priority>
 
     </url>
 
@@ -321,14 +329,6 @@
     <url>
         <loc>https://hjjjong0811.github.io/2018/09/13/programming/180913_CPP%EA%B0%80%EC%83%81%ED%95%A8%EC%88%98/</loc>
         <lastmod>2018-09-13T06:38:21.960Z</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.6</priority>
-
-    </url>
-
-    <url>
-        <loc>https://hjjjong0811.github.io/2018/07/21/information/180721_VisualStudio_Linux_%EC%9B%90%EA%B2%A9%EA%B0%9C%EB%B0%9C/</loc>
-        <lastmod>2018-09-08T18:59:59.957Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.6</priority>
 

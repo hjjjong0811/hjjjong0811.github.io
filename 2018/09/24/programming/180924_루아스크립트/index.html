@@ -20,8 +20,13 @@
 
     <!--Description-->
     
-        <meta name="description" content="메이플스토리2 소스코드 공개8월에 메이플스토리2 강화 확률 버그로 인해 공지가 올라왔었다. 그런데 되게 충격적이었던게 어디에서 버그가 있었는지 소스코드 일부를 공개했다! 확률이 민감한 문제라 그런지 정직하게 보이고 싶었던 것 같다!
-어쨌든 확률조작이라는 누명은 벗었는데">
+        <meta name="description" content="Update History
+
+2018.09.24 작성
+2019.05.12 루아 가상머신 내용 추가
+
+
+메이플스토리2 소스코드 공개8월에 메이플스토리2 강화 확률 버그로 인해 공지가 올라왔었다. 그런데 되게 충격적이었던게 어디에서 버그가 있었는지 소스코드 일부를 공개했다">
     
 
     <!--Author-->
@@ -236,7 +241,14 @@
         
 
         <!-- Post Content -->
-        <h1 id="메이플스토리2-소스코드-공개"><a href="#메이플스토리2-소스코드-공개" class="headerlink" title="메이플스토리2 소스코드 공개"></a>메이플스토리2 소스코드 공개</h1><p>8월에 <a href="http://maplestory2.nexon.com/News/NoticeView?sn=780&amp;b.pn=1&amp;b.ct=0b.odtp=all&amp;b.stp=&amp;b.stxt=" target="_blank" rel="noopener">메이플스토리2 강화 확률 버그</a>로 인해 공지가 올라왔었다. 그런데 되게 충격적이었던게 어디에서 버그가 있었는지 소스코드 일부를 공개했다! 확률이 민감한 문제라 그런지 정직하게 보이고 싶었던 것 같다!</p>
+        <blockquote>
+<p><em>Update History</em></p>
+<ul>
+<li>2018.09.24 작성</li>
+<li>2019.05.12 루아 가상머신 내용 추가</li>
+</ul>
+</blockquote>
+<h1 id="메이플스토리2-소스코드-공개"><a href="#메이플스토리2-소스코드-공개" class="headerlink" title="메이플스토리2 소스코드 공개"></a>메이플스토리2 소스코드 공개</h1><p>8월에 <a href="http://maplestory2.nexon.com/News/NoticeView?sn=780&amp;b.pn=1&amp;b.ct=0b.odtp=all&amp;b.stp=&amp;b.stxt=" target="_blank" rel="noopener">메이플스토리2 강화 확률 버그</a>로 인해 공지가 올라왔었다. 그런데 되게 충격적이었던게 어디에서 버그가 있었는지 소스코드 일부를 공개했다! 확률이 민감한 문제라 그런지 정직하게 보이고 싶었던 것 같다!</p>
 <p>어쨌든 확률조작이라는 누명은 벗었는데, 코드를 구경하던 중 흥미로운 부분을 발견해따. 확률 계산 부분을 루아스크립트를 이용하는 것이당!</p>
 <p><img src="http://file.nexon.com/NxFile/Download/FileDownloader.aspx?oidFile=5269304004604593141" alt="루아함수호출"></p>
 <p><img src="http://file.nexon.com/NxFile/Download/FileDownloader.aspx?oidFile=5701649521587520937" alt="루아함수구현"></p>
@@ -273,6 +285,14 @@
 <p>아 시원해..</p>
 <p>그러니까 루아는 lua_State 라는걸 이용해서 C++과 데이터를 공유하고, luaL_loadfile 이라는 함수를 이용해서 파일을 오픈하고 함수를 호출하는 방식으로 실행된다고 보면 될 것 같다.</p>
 <p>그럼이제 메이플을하쟈.</p>
+<h1 id="루아가상머신"><a href="#루아가상머신" class="headerlink" title="루아가상머신"></a>루아가상머신</h1><p>메이플에 정신이 팔려서 루아 소스코드가 어떻게 실행되는지에 대해 설명이 빠진 것 같아 보충합니다. <del>아이패드 써보고 싶은 것 아님.</del> </p>
+<p><img src="/images/programming/180924_루아스크립트가 뭐지_2.jpg" alt="image"></p>
+<p>루아는 루아 API 호출 시 루아 가상머신에서 런타임에 바이트코드로 컴파일된 후에 실행됩니다. Lua Documentation 에 해당 내용이 나와있고, 굵게 처리한 부분을 보면 레지스터 기반 가상머신으로 바이트 코드를 해석해 실행한다고 하네요. </p>
+<blockquote>
+<p>Lua is dynamically typed, <strong>runs by interpreting bytecode with a register-based virtual machine</strong>, and has automatic memory management with incremental garbage collection, making it ideal for configuration, scripting, and rapid prototyping.</p>
+<p><a href="http://www.lua.org/manual/5.3/manual.html" target="_blank" rel="noopener">Lua 5.3 Reference Manual</a></p>
+</blockquote>
+<p>레지스터 기반 가상머신말고는 스택 기반 가상머신이 있는데 Java 의 JVM이나 C# 의 CLR 이 스택 기반이에요. 이 부분은 잘 모르고 루아 스크립트가 어떻게 실행되는지 보는데에 지장이 없을 것 같으므로 패스하겠습니당</p>
 
     </div>
 
@@ -364,7 +384,7 @@ s.setAttribute('data-timestamp', +new Date());
 
     <div id="pageContentView">
         <div id="toc">
-        <ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#메이플스토리2-소스코드-공개"><span class="toc-text">메이플스토리2 소스코드 공개</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#C-빌드-과정"><span class="toc-text">C++ 빌드 과정</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#루아스크립트"><span class="toc-text">루아스크립트</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#루아-API"><span class="toc-text">루아 API</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#루아함수호출"><span class="toc-text">루아함수호출</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#luaL-loadfile"><span class="toc-text">luaL_loadfile</span></a></li></ol></li></ol>
+        <ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#메이플스토리2-소스코드-공개"><span class="toc-text">메이플스토리2 소스코드 공개</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#C-빌드-과정"><span class="toc-text">C++ 빌드 과정</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#루아스크립트"><span class="toc-text">루아스크립트</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#루아-API"><span class="toc-text">루아 API</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#루아함수호출"><span class="toc-text">루아함수호출</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#luaL-loadfile"><span class="toc-text">luaL_loadfile</span></a></li></ol></li><li class="toc-item toc-level-1"><a class="toc-link" href="#루아가상머신"><span class="toc-text">루아가상머신</span></a></li></ol>
         </div>
 
         
@@ -432,11 +452,11 @@ s.setAttribute('data-timestamp', +new Date());
         </li>
         
         <li>
-            <a class="footer-post" href="/categories/daily/">daily</a>
+            <a class="footer-post" href="/categories/information/">information</a>
         </li>
         
         <li>
-            <a class="footer-post" href="/categories/information/">information</a>
+            <a class="footer-post" href="/categories/daily/">daily</a>
         </li>
         
         <li>
