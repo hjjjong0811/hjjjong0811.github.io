@@ -12,8 +12,8 @@
 </script>
 <script src="https://unpkg.com/masonry-layout@4/dist/masonry.pkgd.min.js"></script>
 <!-- Head tag -->
-<head>
-    <meta name="google-site-verification" content="dIT6I-EQkkJdthprZKWtgGkfdp-_J412b6NwC2hJya0" />
+<head><meta name="generator" content="Hexo 3.9.0">
+    <meta name="google-site-verification" content="dIT6I-EQkkJdthprZKWtgGkfdp-_J412b6NwC2hJya0">
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -35,24 +35,24 @@
 
     <!--Open Graph Title-->
     
-        <meta property="og:title" content="Visual Studio로 Linux 원격 개발하기(Ubuntu 설치부터 SSH 서버접속까지)"/>
+        <meta property="og:title" content="Visual Studio로 Linux 원격 개발하기(Ubuntu 설치부터 SSH 서버접속까지)">
     
 
     <!--Open Graph Description-->
     
 
     <!--Open Graph Site Name-->
-    <meta property="og:site_name" content="JJONGLOG"/>
+    <meta property="og:site_name" content="JJONGLOG">
 
     <!--Type page-->
     
-        <meta property="og:type" content="article" />
+        <meta property="og:type" content="article">
     
 
     <!--Page Cover-->
     
 
-    <meta name="twitter:card" content="summary" />
+    <meta name="twitter:card" content="summary">
     
 
     <!-- Title -->
@@ -73,7 +73,7 @@
     <![endif]-->
 
     <!-- Gallery -->
-    <link href="//cdnjs.cloudflare.com/ajax/libs/featherlight/1.3.5/featherlight.min.css" type="text/css" rel="stylesheet" />
+    <link href="//cdnjs.cloudflare.com/ajax/libs/featherlight/1.3.5/featherlight.min.css" type="text/css" rel="stylesheet">
 
     <!-- Custom CSS -->
     <link rel="stylesheet" href="/css/style.css">
@@ -257,8 +257,8 @@
 <p>거기서 USB로 부팅되게끔 설정을 바꿔준다. BIOS 설정창도 제조사마다 또 다르다.</p>
 <h3 id="Ubuntu-설치-2"><a href="#Ubuntu-설치-2" class="headerlink" title="Ubuntu 설치"></a>Ubuntu 설치</h3><p>부팅을 USB로 바꾼 후에 재부팅하면 Ubuntu 설치가 진행된다. 블로그에 올릴생각이 아니었어서 사진은 없당…. <strong>설치 중에 입력한 사용자 이름이랑 비밀번호로 원격 접속</strong>을 할거니까 적당하게 잘 정해주도록 하자.</p>
 <p>Windows만 썼는데 다른거 까니까 되게 신기하고 막 기분이상하다ㅠㅠㅠ감동?</p>
-<h3 id="언어-설정"><a href="#언어-설정" class="headerlink" title="언어 설정"></a>언어 설정</h3><p><img src="/images/programming/180721_VisualStudio_Linux_원격개발_1.png" alt=""></p>
-<p><img src="/images/programming/180721_VisualStudio_Linux_원격개발_2.png" alt=""></p>
+<h3 id="언어-설정"><a href="#언어-설정" class="headerlink" title="언어 설정"></a>언어 설정</h3><p><img src="/images/programming/180721_VisualStudio_Linux_원격개발_1.png" alt></p>
+<p><img src="/images/programming/180721_VisualStudio_Linux_원격개발_2.png" alt></p>
 <p>일단 언어 설정부터했다 영어가 입력이 안됐었다ㅠㅠ..</p>
 <p>시스템 설정-&gt;텍스트입력창 을 누르면 입력 소스를 추가할 수 있다. +버튼을 눌러서 영어(미국)을 추가하자! 만약 언어가 설치안되었다면 시스템설정-&gt;언어지원에 가면 설치할 수 있다</p>
 <h1 id="SSH-서버-열기"><a href="#SSH-서버-열기" class="headerlink" title="SSH 서버 열기"></a>SSH 서버 열기</h1><p>이제 터미널 창을 열어야지!!! 했는데 난 윈도우밖에 안써봤다.. 어떻게 열지? 할땐 구글링…</p>
@@ -275,12 +275,12 @@
 <h2 id="SSH-Server-설치-및-설정"><a href="#SSH-Server-설치-및-설정" class="headerlink" title="SSH Server 설치 및 설정"></a>SSH Server 설치 및 설정</h2><p>SSH 설치와 설정에는 <a href="http://programmingskills.net/archives/315" target="_blank" rel="noopener">SSH(Secure SHell) 설치와 사용법(Ubuntu)</a> 를 참고했다.</p>
 <h3 id="SSH-Server-설치"><a href="#SSH-Server-설치" class="headerlink" title="SSH Server 설치"></a>SSH Server 설치</h3><p>먼저 ssh Server를 설치하기 위해서 터미널에 아래 명령어를 입력했다</p>
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">sudo apt-get install openssh-server g++ gdb gdbserver</span><br></pre></td></tr></table></figure>
-<p><img src="/images/programming/180721_VisualStudio_Linux_원격개발_3.png" alt=""></p>
+<p><img src="/images/programming/180721_VisualStudio_Linux_원격개발_3.png" alt></p>
 <h3 id="설정"><a href="#설정" class="headerlink" title="설정"></a>설정</h3><p>그리고나서 설정파일을 수정했다. 아래 명령어를 치면 설정파일을 열 수 있다.</p>
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">sudo vim /etc/ssh/sshd_config</span><br></pre></td></tr></table></figure>
 <p>vi 에디터에서 i 를 누르면 수정이 가능하고, esc를 누르고 :wq! 를 치면 저장하고 나갈 수 있다.</p>
-<p><img src="/images/programming/180721_VisualStudio_Linux_원격개발_4.png" alt=""></p>
-<p><img src="/images/programming/180721_VisualStudio_Linux_원격개발_5.png" alt=""></p>
+<p><img src="/images/programming/180721_VisualStudio_Linux_원격개발_4.png" alt></p>
+<p><img src="/images/programming/180721_VisualStudio_Linux_원격개발_5.png" alt></p>
 <p>Port 는 22로 되어있을건데, 굳이 바꾸지 않아도 된다. 나는 심심하니까 바꿨다.</p>
 <p>PasswordAuthentication 을 yes로 해야 사용자 비밀번호로 들어올 수 있다. 보안 문제로 비밀번호로 들어오는 것보다는 공개키 인증방식을 권장한다고 한다. 하지만 나는 공유기 내부에서만 쓸 것이고, ssh server를 그리 자주 열어두지 않을 것이므로 편하게 비밀번호로 했다.</p>
 <p>설정 수정이 끝났으면 <code>ESC + :wq!</code> 로 나가자.</p>
@@ -290,19 +290,19 @@
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">sudo ufw enable</span><br><span class="line">sudo ufw allow (설정한 포트번호)</span><br></pre></td></tr></table></figure>
 <p>방화벽을 활성화하고, 포트를 열어준다</p>
 <p>명령어가 헷갈릴 때는 sudo ufw help 였던가?? 아무튼 언제나 help 를 대충 붙여보면 명령어들을 알려준다. 잘 까먹는 편이라 명령어로 해야할 때는 help를 참 자주쓴다.. </p>
-<p><img src="/images/programming/180721_VisualStudio_Linux_원격개발_6.png" alt=""></p>
-<p><img src="/images/programming/180721_VisualStudio_Linux_원격개발_7.png" alt=""></p>
-<p><img src="/images/programming/180721_VisualStudio_Linux_원격개발_8.png" alt=""></p>
+<p><img src="/images/programming/180721_VisualStudio_Linux_원격개발_6.png" alt></p>
+<p><img src="/images/programming/180721_VisualStudio_Linux_원격개발_7.png" alt></p>
+<p><img src="/images/programming/180721_VisualStudio_Linux_원격개발_8.png" alt></p>
 <h3 id="IP-확인"><a href="#IP-확인" class="headerlink" title="IP 확인"></a>IP 확인</h3><p>터미널에 접속하기 위해서는 IP주소가 필요한데, Ubuntu 터미널 창에 <code>ip addr</code>을 입력해서 접속할 IP를 확인하자. <code>127.0.0.1</code>은 루프백이고 좀 아래쪽에 IPv4 주소가 나올거다.</p>
 <h1 id="Visual-Studio-SSH-개발"><a href="#Visual-Studio-SSH-개발" class="headerlink" title="Visual Studio SSH 개발"></a>Visual Studio SSH 개발</h1><p>Visual Studio 원격 접속 방법이나 VS로 디버깅하는 법은 <a href="https://m.blog.naver.com/tipsware/220991849234" target="_blank" rel="noopener">VS2017을 사용하여 리눅스 프로그래밍하기</a> 를 참고했다. 디버깅하는 법이나 라즈베리파이 관련해서 자세히알려주시니까 한번 들어가보면 조켓다! 감사합니다 ㅎㅎㅎ</p>
 <h2 id="Linux-개발환경-설치"><a href="#Linux-개발환경-설치" class="headerlink" title="Linux 개발환경 설치"></a>Linux 개발환경 설치</h2><p>그럼이제 Windows 컴퓨터로 돌아와서 열어놓은 SSH 서버로 원격개발을 해야하는데 먼저 Visual Studio 2017 Installer 를 열어서 Linux 개발환경을 설치한다</p>
-<p><img src="/images/programming/180721_VisualStudio_Linux_원격개발_9.png" alt=""></p>
+<p><img src="/images/programming/180721_VisualStudio_Linux_원격개발_9.png" alt></p>
 <h2 id="원격-시스템-연결"><a href="#원격-시스템-연결" class="headerlink" title="원격 시스템 연결"></a>원격 시스템 연결</h2><p>그리고나서 Visual Studio를 열어서 <strong>디버그-&gt;옵션-&gt;플랫폼간-&gt;연결관리자</strong> 에 들어간다. 거기서 추가를 누르면 원격 시스템에 연결할 수 있다. IP, PORT, 그리고 Ubuntu OS를 설치할때 등록한 사용자(싫으면 다른 사용자..)이름이랑 암호를 넣어준다</p>
-<p><img src="/images/programming/180721_VisualStudio_Linux_원격개발_10.png" alt=""></p>
-<h2 id="Linux-프로젝트-생성"><a href="#Linux-프로젝트-생성" class="headerlink" title="Linux 프로젝트 생성"></a>Linux 프로젝트 생성</h2><p><img src="/images/programming/180721_VisualStudio_Linux_원격개발_11.png" alt=""></p>
+<p><img src="/images/programming/180721_VisualStudio_Linux_원격개발_10.png" alt></p>
+<h2 id="Linux-프로젝트-생성"><a href="#Linux-프로젝트-생성" class="headerlink" title="Linux 프로젝트 생성"></a>Linux 프로젝트 생성</h2><p><img src="/images/programming/180721_VisualStudio_Linux_원격개발_11.png" alt></p>
 <p>새프로젝트를 만들때 플랫폼간-&gt;Linux로 생성하면 Linux 코드를 짤수있다. 빌드한 코드는 Ubuntu 노트북에 쏚쏚 들어오는데 그 경로는 프로젝트 속성에 나와있다. 기본적으로 홈/projects/(프로젝트이름) 으로 생긴다 </p>
 <p>아! 실행했을때 printf 한게 안보여두 당황하지말고 Visual Studio의 디버그-&gt;Linux콘솔을 열어 확인하자</p>
-<p><img src="/images/programming/180721_VisualStudio_Linux_원격개발_12.png" alt=""></p>
+<p><img src="/images/programming/180721_VisualStudio_Linux_원격개발_12.png" alt></p>
 <p>헤헤 이러케 설정을 마치고 네트워크프로그래밍 공부하는데 신기하당! 컴두개켜놓고 실행해보니까 <del>쿨러 도느라 덥고..폭염이고</del> 여기서짠 코드가 저기서 돌아가고 해서 신기하다!</p>
 <p>포스팅이 처음부터 끝까지적느라 내용이 많이 부족하므로 링크 들어가서 다른분들 글을 좀더 참고하기를 추천드린다</p>
 <p>책따라서 공부좀 하다가 어느정도 좋아지면 윈도우랑 Linux 둘다 돌아가는 코드를 짜볼 예정이다!</p>
@@ -449,7 +449,7 @@ s.setAttribute('data-timestamp', +new Date());
             </li>
             
             <li>
-                <a class="footer-post" href="/2018/09/24/programming/180924_루아스크립트/">루아스크립트가 뭐지</a>
+                <a class="footer-post" href="/2018/09/15/hobby/180915_스컬피피규어/">스컬피 피규어 만들기</a>
             </li>
             
         </ul>
@@ -463,15 +463,15 @@ s.setAttribute('data-timestamp', +new Date());
     <ul>
         
         <li>
+            <a class="footer-post" href="/categories/daily/">daily</a>
+        </li>
+        
+        <li>
             <a class="footer-post" href="/categories/download/">download</a>
         </li>
         
         <li>
             <a class="footer-post" href="/categories/information/">information</a>
-        </li>
-        
-        <li>
-            <a class="footer-post" href="/categories/daily/">daily</a>
         </li>
         
         <li>
