@@ -245,7 +245,7 @@
 <blockquote>
 <p> 컴파일러는 포인터의 타입으로 판단하기 때문입니다.</p>
 </blockquote>
-<p>판단! 그렇죠. 컴파일러는 작성한 코드를 보고, 어떤 함수를 실행시킬지 매치시켜서 어셈블리 코드로 변환하겠지요. 그런데 포인터의 타입이 Animal 이라면? Animal 의 함수가 실행되게끔 만들겠지요?</p>
+<p>컴파일러는 작성한 코드를 보고, 어떤 함수를 실행시킬지 매치시켜서 어셈블리 코드로 변환하겠지요. 그런데 포인터의 타입이 Animal 이라면? Animal 의 함수가 실행되게끔 만들겠지요?</p>
 <p>C# 에서는 문제없이 됐는걸요! 그건 어떻게 동작되는 거에요? 하는 궁금증이 생깁니다. 추측으로는 객체마다 Type에 대한 정보를 따로 담아두고 기본클래스 함수호출시 실제 타입이 어떤지 확인하는 식이 아닐까 생각하는데요. 그건 잠시 미뤄두겠습니다.</p>
 <h2 id="가상함수를-적용하면"><a href="#가상함수를-적용하면" class="headerlink" title="가상함수를 적용하면?"></a>가상함수를 적용하면?</h2><p>그렇다면 가상함수를 적용하려면 어떻게 해야할까요? 간단하게 virtual 키워드만 붙이면 해결입니다!</p>
 <figure class="highlight cpp"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br></pre></td><td class="code"><pre><span class="line"><span class="class"><span class="keyword">class</span> <span class="title">Animal</span>&#123;</span></span><br><span class="line"><span class="keyword">public</span>:</span><br><span class="line">    <span class="keyword">virtual</span> ~Animal()&#123;&#125;		<span class="comment">//가상 소멸자 -&gt; 아래에서 설명</span></span><br><span class="line">    <span class="function"><span class="keyword">virtual</span> <span class="keyword">void</span> <span class="title">eat</span><span class="params">()</span></span>;			<span class="comment">//가상함수입니다</span></span><br><span class="line">&#125;</span><br><span class="line"><span class="class"><span class="keyword">class</span> <span class="title">Cat</span>:</span><span class="keyword">public</span> Animal&#123;</span><br><span class="line"><span class="keyword">public</span>:</span><br><span class="line">    ~Cat()&#123;&#125;</span><br><span class="line">    <span class="function"><span class="keyword">void</span> <span class="title">eat</span><span class="params">()</span> override</span>;		<span class="comment">//가상함수를 override 합니다</span></span><br><span class="line">&#125;</span><br><span class="line"><span class="comment">//----------------------</span></span><br><span class="line"><span class="function"><span class="keyword">int</span> <span class="title">main</span><span class="params">()</span></span>&#123;</span><br><span class="line">    Animal *pAnimal;</span><br><span class="line">    Cat cat;</span><br><span class="line">    </span><br><span class="line">    pAnimal = &amp;cat;</span><br><span class="line">    pAnimal-&gt;eat();		<span class="comment">//"냥"</span></span><br><span class="line">    <span class="keyword">return</span> <span class="number">0</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
@@ -258,14 +258,14 @@
 <p>파생 클래스 인스턴스들은 가상함수테이블을 가르키는 가상함수포인터를 가지고있습니다.</p>
 <p>그러니까 인스턴스의 가상함수포인터를 통해서 가상함수 테이블을 참조하고, 해당하는 함수의 주소를 찾아서 호출하는 방식이지요!</p>
 <p><img src="/images/programming/180913_가상함수_3.PNG" alt="Image"></p>
-<h3 id="디버깅-툴로-확인하기-1"><a href="#디버깅-툴로-확인하기-1" class="headerlink" title="디버깅 툴로 확인하기 #1"></a>디버깅 툴로 확인하기 #1</h3><p>어떤 구조로 들어있는 건지 확인해볼까요? Visual Studio는 좋은 툴이에요. 디버깅을 해봅시다</p>
+<h3 id="디버깅-툴로-확인하기-1"><a href="#디버깅-툴로-확인하기-1" class="headerlink" title="디버깅 툴로 확인하기 #1"></a>디버깅 툴로 확인하기 #1</h3><p>어떤 구조로 들어있는 건지 확인해볼까요? 디버깅을 해봅시다</p>
 <figure class="highlight cpp"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br></pre></td><td class="code"><pre><span class="line"><span class="class"><span class="keyword">class</span> <span class="title">Animal</span> &#123;</span></span><br><span class="line"><span class="keyword">public</span>:</span><br><span class="line">	<span class="keyword">virtual</span> ~Animal() &#123; &#125;		<span class="comment">//가상소멸자</span></span><br><span class="line">	<span class="function"><span class="keyword">virtual</span> <span class="keyword">void</span> <span class="title">eat</span><span class="params">()</span> </span>&#123;		<span class="comment">//가상함수</span></span><br><span class="line">		<span class="built_in">cout</span> &lt;&lt; <span class="string">"냠"</span> &lt;&lt; <span class="built_in">endl</span>;</span><br><span class="line">	&#125;</span><br><span class="line">&#125;;</span><br><span class="line"><span class="class"><span class="keyword">class</span> <span class="title">Cat</span> :</span><span class="keyword">public</span> Animal &#123;</span><br><span class="line"><span class="keyword">public</span>:</span><br><span class="line">	~Cat() &#123;&#125;</span><br><span class="line">	<span class="function"><span class="keyword">void</span> <span class="title">eat</span><span class="params">()</span> </span>&#123;		<span class="comment">//가상함수를 override 합니다</span></span><br><span class="line">		<span class="built_in">cout</span> &lt;&lt; <span class="string">"냥"</span> &lt;&lt; <span class="built_in">endl</span>;</span><br><span class="line">	&#125;</span><br><span class="line">&#125;;</span><br><span class="line"><span class="class"><span class="keyword">class</span> <span class="title">Dog</span> :</span><span class="keyword">public</span> Animal &#123;	<span class="comment">//Cat과의 차이를 보기 위해 추가했습니다</span></span><br><span class="line"><span class="keyword">public</span>:</span><br><span class="line">	~Dog() &#123;&#125;</span><br><span class="line">	<span class="function"><span class="keyword">void</span> <span class="title">eat</span><span class="params">()</span> </span>&#123;		<span class="comment">//가상함수를 override 합니다</span></span><br><span class="line">		<span class="built_in">cout</span> &lt;&lt; <span class="string">"멍"</span> &lt;&lt; <span class="built_in">endl</span>;</span><br><span class="line">	&#125;</span><br><span class="line">&#125;;</span><br><span class="line"><span class="comment">//----------------------</span></span><br><span class="line"><span class="function"><span class="keyword">int</span> <span class="title">main</span><span class="params">()</span> </span>&#123;</span><br><span class="line">	Animal *pAnimal1, *pAnimal2;</span><br><span class="line">	Cat cat;</span><br><span class="line">	Dog dog;</span><br><span class="line"></span><br><span class="line">	pAnimal1 = &amp;cat;</span><br><span class="line">	pAnimal2 = &amp;dog;</span><br><span class="line"></span><br><span class="line">	pAnimal1-&gt;eat();		<span class="comment">//"냥"</span></span><br><span class="line">	pAnimal2-&gt;eat();		<span class="comment">//"멍"</span></span><br><span class="line"></span><br><span class="line">	<span class="keyword">return</span> <span class="number">0</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
 <p><img src="/images/programming/180913_가상함수_1.PNG" alt="Image"></p>
 <p>Cat클래스의 인스턴스에 __vfptr(가상 함수 포인터)이라는게 눈에 띄네요. 값을 보니 <code>Cat::vftable[3]()</code> 이라는게 있는데 이게 virtual funtion table(가상함수테이블) 인가봅니다. 안에는 virtual 키워드가 붙어있던 함수들이 있군요. 소멸자와 eat() 함수가 들어있습니다.</p>
 <h3 id="디버깅-툴로-확인하기-2"><a href="#디버깅-툴로-확인하기-2" class="headerlink" title="디버깅 툴로 확인하기 #2"></a>디버깅 툴로 확인하기 #2</h3><p>가상함수를 쓰지 않는다면  구조는 아래와 같습니다</p>
 <p><img src="/images/programming/180913_가상함수_2.PNG" alt="Image"></p>
 <p>단순하네요. 가상함수를 썼을 때는 인스턴스마다 __vfptr(가상 함수 포인터)가 들어갔고, 가상 함수 포인터가 가르키는 곳에는 가상함수테이블이 있었는데, 얘는 밋밋해요.</p>
-<p>가상함수는 다형성을 지원하도록 해주는 정말 좋은 아이지만, 그렇다고 필요하지 않은 곳에 사용하면 안됩니다. 인스턴스마다 가상 함수 포인터(4bytes)가 들어간다면 크기가 커질테니까요.</p>
+<p>가상함수는 다형성을 지원하도록 해주는 정말 좋은 기능이지만, 그렇다고 필요하지 않은 곳에 사용하면 의미없이 인스턴스마다 가상 함수 포인터(4bytes)가 들어가게 되므로 사용할 때 한번 더 생각이 필요해 보입니다.</p>
 <h1 id="가상소멸자"><a href="#가상소멸자" class="headerlink" title="가상소멸자"></a>가상소멸자</h1><p>Animal(기본 클래스)의 포인터를 사용해서 함수를 호출하면 Cat(파생 클래스)의 함수가 호출되지 않는다고 했습니다. 그러면 소멸자의 경우에는 어떨까요?</p>
 <p>소멸자도 마찬가지입니다. Animal(기본 클래스)의 포인터 타입을 보고 소멸자를 바인드하기 때문에 Cat(파생 클래스)의 소멸자는 호출되지 않습니다.</p>
 <p>파생 클래스의 소멸자가 호출되지 않으면 파생 클래스에서 할당된 메모리는 어떻게 되는거죠? 새는거죠. 어떤 클래스를 기본 클래스로 사용하고 싶다면 소멸자에는 꼭 virtual 을 붙여줍시다!</p>
@@ -277,10 +277,10 @@
 <p>JAVA같은 경우엔 추상 클래스로 만드려면 abstract 키워드를 이용했습니다. C++에서 추상 클래스를 만드려면 <strong>순수 가상 함수</strong>를 포함하면 해당 클래스는 추상클래스가 됩니다. 하지만 마땅히 가질만한 순수 가상 함수가 없는 경우에는 어떻게 추상 클래스로 만들 수 있을까요?</p>
 <p>그 방법이 순수가상소멸자입니다.  소멸자를 순수가상함수로 만듦으로서 추상클래스로 만드는 겁니다.</p>
 <figure class="highlight cpp"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">//.h 선언</span></span><br><span class="line"><span class="keyword">virtual</span> ~Animal() = <span class="number">0</span>;</span><br></pre></td></tr></table></figure>
-<p>아, 그런데 참 재밌는게 파생 클래스의 소멸자가 호출된 후에 기본 클래스의 소멸자도 호출됩니다. 그러니까 순수가상소멸자로 구현없이 남겨두면 기본 클래스의 소멸자를 찾을 수 없다는 오류메시지가 마구마구 뜬다는 말이죠.</p>
+<p>아, 여기서 하나 주의할 게 파생 클래스의 소멸자가 호출된 후에 기본 클래스의 소멸자도 호출됩니다. 그러니까 순수가상소멸자를 구현없이 남겨두면 기본 클래스의 소멸자를 찾을 수 없다는 오류메시지가 마구마구 뜬다는 말이죠.</p>
 <p>아무것도 안하는 순수가상소멸자더라도 선언과 정의는 빼먹지 말아야합니다</p>
 <figure class="highlight cpp"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">//.cpp 정의</span></span><br><span class="line">Animal::~Animal()&#123;&#125;</span><br></pre></td></tr></table></figure>
-<p>넵 이렇게 가상함수에 대해 정리해봤습니다. 어서빨리 C++에서도 객체지향을 즐길(?) 수 있게 되면 좋겠네요! 한줄한줄 끝없는 구글링은 싫어욧!</p>
+<p>넵 이렇게 가상함수에 대해 정리해봤습니다. 어서빨리 객체지향을 즐길(?) 수 있게 되면 좋겠네요! 한줄한줄 끝없는 구글링은 싫어욧!</p>
 
     </div>
 
@@ -345,18 +345,11 @@ s.setAttribute('data-timestamp', +new Date());
     <span id="actions">
         <ul>
             
-            <li>
-                <i  class="nav_left"
-                    style="cursor:pointer;"
-                    onclick="location.href='/2018/09/14/hobby/180914_그림/';">
-                </i>
-            </li>
-            
             
             <li>
                 <i  class="nav_right"
                     style="cursor:pointer;"
-                    onclick="location.href='/2018/09/07/programming/180907_CPPtemplate/';">
+                    onclick="location.href='/2018/07/21/programming/180721_VisualStudio_Linux_원격개발/';">
                 </i>
             </li>
             
@@ -410,19 +403,19 @@ s.setAttribute('data-timestamp', +new Date());
         <ul>
             
             <li>
-                <a class="footer-post" href="/2019/04/28/daily/post/">오랜만의 포스팅</a>
+                <a class="footer-post" href="/2018/09/13/programming/180913_CPP가상함수/">C++ 가상함수에 대해서</a>
             </li>
             
             <li>
-                <a class="footer-post" href="/2018/12/29/hobby/181229_3D펜/">3D펜 샀다!</a>
+                <a class="footer-post" href="/2018/07/21/programming/180721_VisualStudio_Linux_원격개발/">Visual Studio로 Linux 원격 개</a>
             </li>
             
             <li>
-                <a class="footer-post" href="/2018/09/26/hobby/180926_건담종이모형/">건담종이모형 만들어따</a>
+                <a class="footer-post" href="/2017/12/17/information/171217_통합형저장소/">비와이폰 통합형 저장소 하는 법, 후기</a>
             </li>
             
             <li>
-                <a class="footer-post" href="/2018/09/15/hobby/180915_스컬피피규어/">스컬피 피규어 만들기</a>
+                <a class="footer-post" href="/2017/07/21/information/170721_크롬검색야후/">크롬 검색이 강제로 야후로 돼요</a>
             </li>
             
         </ul>
@@ -434,14 +427,6 @@ s.setAttribute('data-timestamp', +new Date());
 <div class="col-xs-6 col-sm-6 col-md-3 col-lg-3 footer-categories">
     <h2>Categories</h2>
     <ul>
-        
-        <li>
-            <a class="footer-post" href="/categories/daily/">daily</a>
-        </li>
-        
-        <li>
-            <a class="footer-post" href="/categories/download/">download</a>
-        </li>
         
         <li>
             <a class="footer-post" href="/categories/information/">information</a>
